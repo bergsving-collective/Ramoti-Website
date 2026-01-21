@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
+        /* Smooth scrolling for in-page anchor links */
+        html { scroll-behavior: smooth; }
         :root {
             --bali-green: #1a4332;
             --bali-gold: #c5a059;
@@ -82,12 +84,21 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-[#1a4332] p-2 hover:bg-gray-100 rounded-lg transition">
+                    <button id="mobileMenuButton" aria-expanded="false" aria-controls="mobileMenu" class="text-[#1a4332] p-2 hover:bg-gray-100 rounded-lg transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
                     </button>
                 </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobileMenu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-1">
+                <a href="#services" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Services</a>
+                <a href="#about" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Yogi & Louis</a>
+                <a href="#reviews" class="block text-[#1a4332] font-medium uppercase tracking-widest py-2 hover:text-[#c5a059] transition">Reviews</a>
+                <a href="#contact" class="block bg-[#1a4332] text-white px-4 py-2 rounded-full hover:bg-[#c5a059] transition w-max">Book Now</a>
+            </div>
             </div>
         </div>
     </nav>
@@ -336,6 +347,18 @@
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
                                 <input type="checkbox" name="interest" value="SIM/Transfer" class="accent-[#c5a059]"> SIM/Transfer
                             </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="SIM/Transfer" class="accent-[#c5a059]"> SIM/Transfer
+                            </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
+                            </label>
                         </div>
                     </div>
                     <div>
@@ -387,6 +410,17 @@
     </a>
 
     <script>
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', (!expanded).toString());
+            });
+        }
+
         document.getElementById('baliForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
