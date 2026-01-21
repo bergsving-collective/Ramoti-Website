@@ -36,6 +36,19 @@
                 background-size: 110%;
             }
         }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero-content {
+            animation: fadeInUp 1.5s ease-out;
+        }
         .hero-gradient {
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=2000');
             background-size: cover;
@@ -115,7 +128,7 @@
 
     <!-- Hero Section -->
     <header class="relative h-screen flex items-center justify-center hero-gradient text-white text-center pt-20">
-        <div class="max-w-4xl px-4">
+        <div class="max-w-4xl px-4 hero-content">
             <h1 class="text-5xl md:text-7xl font-bold mb-6">Relax. We'll Fix Everything.</h1>
             <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto">From custom tours and villa rentals to your airport transport and local SIM-cards. The ultimate island service by Yogi & Louis.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
