@@ -404,8 +404,11 @@
                             <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
                                 <input type="checkbox" name="interest" value="Tattoos/Piercings" class="accent-[#c5a059]"> Tattoos/Piercings
                             </label>
+                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" id="interestOther" name="interest" value="Other" class="accent-[#c5a059]"> Other
+                            </label>
                         </div>
-                        <div class="mt-4">
+                        <div class="mt-4 hidden" id="otherField">
                             <label class="block text-sm font-semibold mb-2" for="formOther">Other (optional)</label>
                             <input type="text" id="formOther" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Tell us what you need">
                         </div>
@@ -432,6 +435,21 @@
 
     <script src="assets/js/includes.js"></script>
     <script>
+        const otherCheckbox = document.getElementById('interestOther');
+        const otherField = document.getElementById('otherField');
+        const otherInput = document.getElementById('formOther');
+
+        const toggleOtherField = () => {
+            const isChecked = otherCheckbox.checked;
+            otherField.classList.toggle('hidden', !isChecked);
+            if (!isChecked) {
+                otherInput.value = '';
+            }
+        };
+
+        otherCheckbox.addEventListener('change', toggleOtherField);
+        toggleOtherField();
+
         document.getElementById('baliForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -440,14 +458,14 @@
             const name = document.getElementById('formName').value;
             const contact = document.getElementById('formContact').value;
             const message = document.getElementById('formMessage').value;
-            const other = document.getElementById('formOther').value.trim();
+            const other = otherInput.value.trim();
             
             const selectedInterests = [];
             document.querySelectorAll('input[name="interest"]:checked').forEach((checkbox) => {
                 selectedInterests.push(checkbox.value);
             });
 
-            if (other) {
+            if (otherCheckbox.checked && other) {
                 selectedInterests.push(`Other: ${other}`);
             }
             const interestsText = selectedInterests.length > 0 ? selectedInterests.join(", ") : "General Inquiry";
