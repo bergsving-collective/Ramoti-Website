@@ -114,10 +114,13 @@
     <section class="pb-12 px-4">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-3">
             <button class="filter-btn active px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('all', this)">All Memories</button>
-            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('tours', this)">Tours</button>
-            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('rentals', this)">Rentals</button>
-            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('landscapes', this)">Landscapes</button>
-            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('villas', this)">Villas</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('mtn', this)">Mountain Trekking</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('rafting', this)">White Water Rafting</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('surf', this)">Yogi's Surfing School</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('atv', this)">ATVs and Quads</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('ubud', this)">Ubud and Kintamani</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('nusa', this)">Nusa Penida</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-gray-200 text-sm font-semibold transition" onclick="filterGallery('other', this)">Other</button>
         </div>
     </section>
 
@@ -125,833 +128,559 @@
     <main id="gallery" class="pb-24 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto masonry-grid" id="masonryGrid">
 
-            <div class="gallery-card group" data-category="villas">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/ancient_balinese_water_temple_statues_spring_fountain_pool.png" class="w-full object-cover" alt="Ancient Balinese Water Temple Statues Spring Fountain Pool" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Ancient Balinese Water Temple Statues Spring Fountain Pool</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/ancient_stone_temple_entrance_carved_face_mossy.png" class="w-full object-cover" alt="Ancient Stone Temple Entrance Carved Face Mossy" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Ancient Stone Temple Entrance Carved Face Mossy</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/balinese_temple_traditional_thatched_roof_open_pavilion_southeast_asia.png" class="w-full object-cover" alt="Balinese Temple Traditional Thatched Roof Open Pavilion Southeast Asia" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Balinese Temple Traditional Thatched Roof Open Pavilion Southeast Asia</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="surf">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/beach_surfing_lesson_group_people_surfboards_umbrellas_sand.png" class="w-full object-cover" alt="Beach Surfing Lesson Group People Surfboards Umbrellas Sand" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Beach Surfing Lesson Group People Surfboards Umbrellas Sand</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/city_lights_view_from_mountain_night_sky_stars_glowing.png" class="w-full object-cover" alt="City Lights View From Mountain Night Sky Stars Glowing" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">City Lights View From Mountain Night Sky Stars Glowing</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/couple_kissing_on_red_atv_vehicle_in_green_field.png" class="w-full object-cover" alt="Couple Kissing On Red Atv Vehicle In Green Field" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Couple Kissing On Red Atv Vehicle In Green Field</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/couple_riding_red_atv_helmets_green_bali_adventure_sign.png" class="w-full object-cover" alt="Couple Riding Red Atv Helmets Green Bali Adventure Sign" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Couple Riding Red Atv Helmets Green Bali Adventure Sign</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/couple_riding_red_atv_helmets_outdoor_greenery_path.png" class="w-full object-cover" alt="Couple Riding Red Atv Helmets Outdoor Greenery Path" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Couple Riding Red Atv Helmets Outdoor Greenery Path</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/couple_riding_red_atv_through_muddy_forest_trail.png" class="w-full object-cover" alt="Couple Riding Red Atv Through Muddy Forest Trail" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Couple Riding Red Atv Through Muddy Forest Trail</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/couple_watching_sunrise_volcano_view_hiking_mountain_trekking.png" class="w-full object-cover" alt="Couple Watching Sunrise Volcano View Hiking Mountain Trekking" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Couple Watching Sunrise Volcano View Hiking Mountain Trekking</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/dramatic_sunset_over_dark_clouds_colorful_sky_layers_evening.png" class="w-full object-cover" alt="Dramatic Sunset Over Dark Clouds Colorful Sky Layers Evening" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Dramatic Sunset Over Dark Clouds Colorful Sky Layers Evening</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/elephant_spraying_water_two_people_riding_in_river.png" class="w-full object-cover" alt="Elephant Spraying Water Two People Riding In River" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Elephant Spraying Water Two People Riding In River</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/elephant_with_rider_and_tourist_in_safari_hat.png" class="w-full object-cover" alt="Elephant With Rider And Tourist In Safari Hat" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Elephant With Rider And Tourist In Safari Hat</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_enjoying_atv_adventure_near_waterfalls_tropical_forest.png" class="w-full object-cover" alt="Group Enjoying Atv Adventure Near Waterfalls Tropical Forest" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Enjoying Atv Adventure Near Waterfalls Tropical Forest</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_hikers_descending_mountain_rocky_path_foggy_forest.png" class="w-full object-cover" alt="Group Hikers Descending Mountain Rocky Path Foggy Forest" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Hikers Descending Mountain Rocky Path Foggy Forest</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_hikers_climbing_rocky_misty_mountain_trail.png" class="w-full object-cover" alt="Group Of Hikers Climbing Rocky Misty Mountain Trail" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of Hikers Climbing Rocky Misty Mountain Trail</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_hikers_descending_rocky_mountain_trail_foggy_weather.png" class="w-full object-cover" alt="Group Of Hikers Descending Rocky Mountain Trail Foggy Weather" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of Hikers Descending Rocky Mountain Trail Foggy Weather</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_hikers_five_people_trekking_sticks_balinese_temple_background.png" class="w-full object-cover" alt="Group Of Hikers Five People Trekking Sticks Balinese Temple Background" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of Hikers Five People Trekking Sticks Balinese Temple Background</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_hikers_posing_with_mountain_view_morning.png" class="w-full object-cover" alt="Group Of Hikers Posing With Mountain View Morning" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of Hikers Posing With Mountain View Morning</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png" class="w-full object-cover" alt="Group Of People Enjoying Ocean View On Rocky Cliff" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of People Enjoying Ocean View On Rocky Cliff</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="rafting">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_people_enjoying_white_water_rafting_adventure.png" class="w-full object-cover" alt="Group Of People Enjoying White Water Rafting Adventure" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of People Enjoying White Water Rafting Adventure</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="surf">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_people_preparing_for_surfing_lesson_on_beach.png" class="w-full object-cover" alt="Group Of People Preparing For Surfing Lesson On Beach" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of People Preparing For Surfing Lesson On Beach</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_people_riding_atv_touring_jungle_cave_waterfalls.png" class="w-full object-cover" alt="Group Of People Riding Atv Touring Jungle Cave Waterfalls" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of People Riding Atv Touring Jungle Cave Waterfalls</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_people_riding_red_atv_quad_bikes_on_rural_path.png" class="w-full object-cover" alt="Group Of People Riding Red Atv Quad Bikes On Rural Path" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of People Riding Red Atv Quad Bikes On Rural Path</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_people_tourists_wearing_orange_sashes_near_cliffside_path.png" class="w-full object-cover" alt="Group Of People Tourists Wearing Orange Sashes Near Cliffside Path" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of People Tourists Wearing Orange Sashes Near Cliffside Path</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="rafting">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_of_people_white_water_rafting_in_river_adventure.png" class="w-full object-cover" alt="Group Of People White Water Rafting In River Adventure" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Of People White Water Rafting In River Adventure</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="surf">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_practicing_surfing_skills_on_sand_with_blue_boards.png" class="w-full object-cover" alt="Group Practicing Surfing Skills On Sand With Blue Boards" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Practicing Surfing Skills On Sand With Blue Boards</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_riding_atv_quad_bikes_jungle_waterfalls_dragon_cave.png" class="w-full object-cover" alt="Group Riding Atv Quad Bikes Jungle Waterfalls Dragon Cave" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Riding Atv Quad Bikes Jungle Waterfalls Dragon Cave</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="surf">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/group_surfing_lesson_beach_yoga_pose_training_indoor_surfboards.png" class="w-full object-cover" alt="Group Surfing Lesson Beach Yoga Pose Training Indoor Surfboards" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Group Surfing Lesson Beach Yoga Pose Training Indoor Surfboards</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/gunung_agung_mountain_sunrise_clouds_volcanic_silhouette_indonesia.png" class="w-full object-cover" alt="Gunung Agung Mountain Sunrise Clouds Volcanic Silhouette Indonesia" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Gunung Agung Mountain Sunrise Clouds Volcanic Silhouette Indonesia</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mrn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/hikers_and_dog_traversing_misty_rocky_mountain_path.png" class="w-full object-cover" alt="Hikers And Dog Traversing Misty Rocky Mountain Path" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Hikers And Dog Traversing Misty Rocky Mountain Path</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/illuminated_balinese_gate_street_lamp_night_road_crosswalk.png" class="w-full object-cover" alt="Illuminated Balinese Gate Street Lamp Night Road Crosswalk" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Illuminated Balinese Gate Street Lamp Night Road Crosswalk</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/illuminated_traditional_gate_archway_night_empty_road_trees.png" class="w-full object-cover" alt="Illuminated Traditional Gate Archway Night Empty Road Trees" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Illuminated Traditional Gate Archway Night Empty Road Trees</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/man_and_guide_riding_elephant_in_tropical_forest_tourism.png" class="w-full object-cover" alt="Man And Guide Riding Elephant In Tropical Forest Tourism" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Man And Guide Riding Elephant In Tropical Forest Tourism</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/man_hiker_wearing_headlamp_night_cityscape_view_winter_clothing.png" class="w-full object-cover" alt="Man Hiker Wearing Headlamp Night Cityscape View Winter Clothing" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Man Hiker Wearing Headlamp Night Cityscape View Winter Clothing</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/man_praying_at_shrine_inside_cave_yellow_cloth_decorations.png" class="w-full object-cover" alt="Man Praying At Shrine Inside Cave Yellow Cloth Decorations" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Man Praying At Shrine Inside Cave Yellow Cloth Decorations</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/man_sitting_on_rock_nighttime_city_lights_headlamp_backpack.png" class="w-full object-cover" alt="Man Sitting On Rock Nighttime City Lights Headlamp Backpack" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Man Sitting On Rock Nighttime City Lights Headlamp Backpack</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/mountain_volcano_crater_with_smoke_and_flower_offerings_sunset.png" class="w-full object-cover" alt="Mountain Volcano Crater With Smoke And Flower Offerings Sunset" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Mountain Volcano Crater With Smoke And Flower Offerings Sunset</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/narrow_stone_stairs_between_cliffs_forest_hiker.png" class="w-full object-cover" alt="Narrow Stone Stairs Between Cliffs Forest Hiker" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Narrow Stone Stairs Between Cliffs Forest Hiker</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/natural_stone_arch_bridge_over_blue_ocean_water_cliffside_view_grass.png" class="w-full object-cover" alt="Natural Stone Arch Bridge Over Blue Ocean Water Cliffside View Grass" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Natural Stone Arch Bridge Over Blue Ocean Water Cliffside View Grass</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/night_climbing_on_rocky_surface_people_wearing_headlamps.png" class="w-full object-cover" alt="Night Climbing On Rocky Surface People Wearing Headlamps" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Night Climbing On Rocky Surface People Wearing Headlamps</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/night_rock_climbing_two_people_outdoor_adventure.png" class="w-full object-cover" alt="Night Rock Climbing Two People Outdoor Adventure" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Night Rock Climbing Two People Outdoor Adventure</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/nighttime_indonesian_temple_gate_staircase_mystical_glow_person.png" class="w-full object-cover" alt="Nighttime Indonesian Temple Gate Staircase Mystical Glow Person" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Nighttime Indonesian Temple Gate Staircase Mystical Glow Person</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/nighttime_rock_climbing_group_hiking_people_headlamps_terrain.png" class="w-full object-cover" alt="Nighttime Rock Climbing Group Hiking People Headlamps Terrain" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Nighttime Rock Climbing Group Hiking People Headlamps Terrain</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/people_enjoying_atv_ride_under_waterfall_in_forest.png" class="w-full object-cover" alt="People Enjoying Atv Ride Under Waterfall In Forest" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">People Enjoying Atv Ride Under Waterfall In Forest</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="surf">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/people_learning_surfing_on_surfboards_on_sandy_beach.png" class="w-full object-cover" alt="People Learning Surfing On Surfboards On Sandy Beach" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">People Learning Surfing On Surfboards On Sandy Beach</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="surf">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/people_practicing_surfing_on_sand_surfboard_training_beach.png" class="w-full object-cover" alt="People Practicing Surfing On Sand Surfboard Training Beach" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">People Practicing Surfing On Sand Surfboard Training Beach</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/people_riding_elephant_spraying_water_in_pond_outdoor.png" class="w-full object-cover" alt="People Riding Elephant Spraying Water In Pond Outdoor" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">People Riding Elephant Spraying Water In Pond Outdoor</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/people_riding_elephant_tusks_water_park_sunny_day.png" class="w-full object-cover" alt="People Riding Elephant Tusks Water Park Sunny Day" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">People Riding Elephant Tusks Water Park Sunny Day</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/people_riding_red_atv_vehicles_helmeted_outdoor_pathway_greenery.png" class="w-full object-cover" alt="People Riding Red Atv Vehicles Helmeted Outdoor Pathway Greenery" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">People Riding Red Atv Vehicles Helmeted Outdoor Pathway Greenery</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/person_in_orange_jacket_climbing_rocky_mountain_slope.png" class="w-full object-cover" alt="Person In Orange Jacket Climbing Rocky Mountain Slope" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Person In Orange Jacket Climbing Rocky Mountain Slope</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/person_on_large_swing_with_two_guides_tropical_forest_background.png" class="w-full object-cover" alt="Person On Large Swing With Two Guides Tropical Forest Background" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Person On Large Swing With Two Guides Tropical Forest Background</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/rock_climbing_mountain_steep_slope_climber_rope_adventure_outdoor.png" class="w-full object-cover" alt="Rock Climbing Mountain Steep Slope Climber Rope Adventure Outdoor" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Rock Climbing Mountain Steep Slope Climber Rope Adventure Outdoor</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/rocky_cliff_ocean_waves_greenery_sky_clouds_coastline_viewpoint.png" class="w-full object-cover" alt="Rocky Cliff Ocean Waves Greenery Sky Clouds Coastline Viewpoint" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Rocky Cliff Ocean Waves Greenery Sky Clouds Coastline Viewpoint</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/sunset_over_mountain_silhouette_with_darkened_sky_and_clouds.png" class="w-full object-cover" alt="Sunset Over Mountain Silhouette With Darkened Sky And Clouds" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Sunset Over Mountain Silhouette With Darkened Sky And Clouds</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/sunset_over_mountain_silhouette_with_people_and_clouds.png" class="w-full object-cover" alt="Sunset Over Mountain Silhouette With People And Clouds" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Sunset Over Mountain Silhouette With People And Clouds</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/sunset_over_ocean_with_cliff_and_cloudy_sky_reflection.png" class="w-full object-cover" alt="Sunset Over Ocean With Cliff And Cloudy Sky Reflection" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Sunset Over Ocean With Cliff And Cloudy Sky Reflection</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/three_hikers_mount_agung_volcano_crater_trail_signature_thumbsup.png" class="w-full object-cover" alt="Three Hikers Mount Agung Volcano Crater Trail Signature Thumbsup" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Three Hikers Mount Agung Volcano Crater Trail Signature Thumbsup</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/three_hikers_on_volcanic_mountain_itagunq_3142_meters.png" class="w-full object-cover" alt="Three Hikers On Volcanic Mountain Itagunq 3142 Meters" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Three Hikers On Volcanic Mountain Itagunq 3142 Meters</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/three_people_smiling_on_rough_rocky_cliff_near_ocean.png" class="w-full object-cover" alt="Three People Smiling On Rough Rocky Cliff Near Ocean" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Three People Smiling On Rough Rocky Cliff Near Ocean</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/three_women_in_hats_standing_clifftop_ocean_view_nature.png" class="w-full object-cover" alt="Three Women In Hats Standing Clifftop Ocean View Nature" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Three Women In Hats Standing Clifftop Ocean View Nature</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/three_women_tourists_cliffside_ocean_view_natural_arch_formation.png" class="w-full object-cover" alt="Three Women Tourists Cliffside Ocean View Natural Arch Formation" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Three Women Tourists Cliffside Ocean View Natural Arch Formation</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/tourists_visiting_cliff_seaside_view_tropical_landscape_blue_sky.png" class="w-full object-cover" alt="Tourists Visiting Cliff Seaside View Tropical Landscape Blue Sky" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Tourists Visiting Cliff Seaside View Tropical Landscape Blue Sky</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/tourists_visiting_rocky_coast_with_waterfall_ocean_view.png" class="w-full object-cover" alt="Tourists Visiting Rocky Coast With Waterfall Ocean View" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Tourists Visiting Rocky Coast With Waterfall Ocean View</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/traditional_bali_wooden_sculptures_mythical_figures_artwork.png" class="w-full object-cover" alt="Traditional Bali Wooden Sculptures Mythical Figures Artwork" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Traditional Bali Wooden Sculptures Mythical Figures Artwork</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/tropical_rice_fields_with_palm_trees_and_pond_under_blue_sky.png" class="w-full object-cover" alt="Tropical Rice Fields With Palm Trees And Pond Under Blue Sky" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Tropical Rice Fields With Palm Trees And Pond Under Blue Sky</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/tropical_waterfall_flowing_rocks_dense_green_foliage.png" class="w-full object-cover" alt="Tropical Waterfall Flowing Rocks Dense Green Foliage" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Tropical Waterfall Flowing Rocks Dense Green Foliage</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_friends_hiking_mountain_peaks_sunset_outdoor_adventure.png" class="w-full object-cover" alt="Two Friends Hiking Mountain Peaks Sunset Outdoor Adventure" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two Friends Hiking Mountain Peaks Sunset Outdoor Adventure</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="mtn">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_men_hiking_mountain_summit_gunung_agung_sign_cloudy_sky.png" class="w-full object-cover" alt="Two Men Hiking Mountain Summit Gunung Agung Sign Cloudy Sky" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two Men Hiking Mountain Summit Gunung Agung Sign Cloudy Sky</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_men_posing_ocean_cliff_natural_rock_arch_formation.png" class="w-full object-cover" alt="Two Men Posing Ocean Cliff Natural Rock Arch Formation" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two Men Posing Ocean Cliff Natural Rock Arch Formation</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_men_riding_red_atv_through_muddy_water_splashing.png" class="w-full object-cover" alt="Two Men Riding Red Atv Through Muddy Water Splashing" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two Men Riding Red Atv Through Muddy Water Splashing</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_men_riding_red_atv_through_water_puddle_offroad_adventure.png" class="w-full object-cover" alt="Two Men Riding Red Atv Through Water Puddle Offroad Adventure" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two Men Riding Red Atv Through Water Puddle Offroad Adventure</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_people_riding_atv_under_waterfall_yellow_helmets_adventure.png" class="w-full object-cover" alt="Two People Riding Atv Under Waterfall Yellow Helmets Adventure" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two People Riding Atv Under Waterfall Yellow Helmets Adventure</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_people_riding_orange_atv_under_waterfall_forest_rocks.png" class="w-full object-cover" alt="Two People Riding Orange Atv Under Waterfall Forest Rocks" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two People Riding Orange Atv Under Waterfall Forest Rocks</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_people_riding_red_atv_through_muddy_waterforest.png" class="w-full object-cover" alt="Two People Riding Red Atv Through Muddy Waterforest" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two People Riding Red Atv Through Muddy Waterforest</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_people_riding_red_quad_bikes_in_muddy_forest.png" class="w-full object-cover" alt="Two People Riding Red Quad Bikes In Muddy Forest" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two People Riding Red Quad Bikes In Muddy Forest</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_women_riding_swing_laughter_tropical_forest_background.png" class="w-full object-cover" alt="Two Women Riding Swing Laughter Tropical Forest Background" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two Women Riding Swing Laughter Tropical Forest Background</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/two_women_sitting_in_large_circular_tree_nest_happy_outdoor.png" class="w-full object-cover" alt="Two Women Sitting In Large Circular Tree Nest Happy Outdoor" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Two Women Sitting In Large Circular Tree Nest Happy Outdoor</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/volcanic_mountain_with_thick_clouds_above_forest_landscape.png" class="w-full object-cover" alt="Volcanic Mountain With Thick Clouds Above Forest Landscape" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Volcanic Mountain With Thick Clouds Above Forest Landscape</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/volcano_mountains_black_lava_field_green_vegetation_cloudy_sky.png" class="w-full object-cover" alt="Volcano Mountains Black Lava Field Green Vegetation Cloudy Sky" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Volcano Mountains Black Lava Field Green Vegetation Cloudy Sky</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="rafting">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/whitewater_rafting_group_adventure_rapids_yellow_helmets_rafting_raft.png" class="w-full object-cover" alt="Whitewater Rafting Group Adventure Rapids Yellow Helmets Rafting Raft" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Whitewater Rafting Group Adventure Rapids Yellow Helmets Rafting Raft</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/woman_and_child_riding_black_quad_bike_green_fields_background.png" class="w-full object-cover" alt="Woman And Child Riding Black Quad Bike Green Fields Background" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Woman And Child Riding Black Quad Bike Green Fields Background</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/woman_in_pink_shirt_on_beach_with_two_people_in_ocean.png" class="w-full object-cover" alt="Woman In Pink Shirt On Beach With Two People In Ocean" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Woman In Pink Shirt On Beach With Two People In Ocean</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/woman_in_pink_shirt_white_hat_yellow_bag_ocean_view_cliff.png" class="w-full object-cover" alt="Woman In Pink Shirt White Hat Yellow Bag Ocean View Cliff" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Woman In Pink Shirt White Hat Yellow Bag Ocean View Cliff</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/woman_in_pink_shirt_with_yellow_handbag_near_ocean_waves.png" class="w-full object-cover" alt="Woman In Pink Shirt With Yellow Handbag Near Ocean Waves" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Woman In Pink Shirt With Yellow Handbag Near Ocean Waves</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/woman_in_sunhat_sunglasses_sitting_cliff_ocean_natural_rock_arch.png" class="w-full object-cover" alt="Woman In Sunhat Sunglasses Sitting Cliff Ocean Natural Rock Arch" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Woman In Sunhat Sunglasses Sitting Cliff Ocean Natural Rock Arch</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/woman_on_wooden_swing_tropical_forest_mountain_man_assisting.png" class="w-full object-cover" alt="Woman On Wooden Swing Tropical Forest Mountain Man Assisting" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Woman On Wooden Swing Tropical Forest Mountain Man Assisting</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="nusa">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/woman_sitting_on_rock_cliff_near_ocean_peace_sign.png" class="w-full object-cover" alt="Woman Sitting On Rock Cliff Near Ocean Peace Sign" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Woman Sitting On Rock Cliff Near Ocean Peace Sign</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="tours">
+            <div class="gallery-card group" data-category="other">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/yogilouis.png" class="w-full object-cover" alt="Yogilouis" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Yogilouis</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/young_couple_enjoying_atv_ride_through_forest_muddy_trail.png" class="w-full object-cover" alt="Young Couple Enjoying Atv Ride Through Forest Muddy Trail" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Young Couple Enjoying Atv Ride Through Forest Muddy Trail</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="rentals">
+            <div class="gallery-card group" data-category="atv">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/young_couple_riding_red_atv_on_country_road_green_fields.png" class="w-full object-cover" alt="Young Couple Riding Red Atv On Country Road Green Fields" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Young Couple Riding Red Atv On Country Road Green Fields</p>
-                    </div>
                 </div>
             </div>
 
-            <div class="gallery-card group" data-category="landscapes">
+            <div class="gallery-card group" data-category="ubud">
                 <div class="relative overflow-hidden rounded-3xl">
                     <img src="photos/young_woman_preparing_for_jungle_swing_ride_safe_harness_tropical_forest.png" class="w-full object-cover" alt="Young Woman Preparing For Jungle Swing Ride Safe Harness Tropical Forest" onclick="openLightbox(this.src)" loading="lazy">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-6 pointer-events-none">
-                        <p class="text-white text-sm font-medium">Young Woman Preparing For Jungle Swing Ride Safe Harness Tropical Forest</p>
-                    </div>
                 </div>
             </div>
+
+
 
 
         </div>
