@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Ramoti Bali | Guided Tours, Rentals & More</title>
-    <meta name="description" content="Explore Ramoti Bali services: custom tours, rentals, villas, transfers, SIM cards, and more. One local family handles every detail.">
-    <meta property="og:title" content="Ramoti Bali Services">
-    <meta property="og:description" content="Custom tours, rentals, villas, transfers, and island essentials handled by Yogi & Ucok. One message, full Bali support.">
+    <title>Services | Ramoti - Concierge and Tours</title>
+    <meta name="description" content="Explore Ramoti - Concierge and Tours services: private drivers, custom tours, rentals, villas, transfers, SIM cards, and island essentials across Bali.">
+    <meta property="og:title" content="Services | Ramoti - Concierge and Tours">
+    <meta property="og:description" content="Private drivers, custom tours, rentals, villas, transfers, SIM cards, and island essentials across Bali.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://ramoti.com/services.html">
+    <meta property="og:image" content="https://ramoti.com/photos/elephant_with_rider_and_tourist_in_safari_hat.png">
+    <meta property="og:site_name" content="Ramoti - Concierge and Tours">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services | Ramoti - Concierge and Tours">
+    <meta name="twitter:description" content="Private drivers, custom tours, rentals, villas, transfers, SIM cards, and island essentials across Bali.">
+    <meta name="twitter:image" content="https://ramoti.com/photos/elephant_with_rider_and_tourist_in_safari_hat.png">
+    <link rel="canonical" href="https://ramoti.com/services.html">
     <link rel="stylesheet" href="assets/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,7 +88,7 @@
         .text-bali-gold { color: var(--bali-gold); }
         
         .hero-inner {
-            background: linear-gradient(rgba(26, 67, 50, 0.8), rgba(26, 67, 50, 0.8)), url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=2000');
+            background: linear-gradient(rgba(26, 67, 50, 0.8), rgba(26, 67, 50, 0.8)), url('photos/elephant_with_rider_and_tourist_in_safari_hat.png');
             background-size: cover;
             background-position: center;
         }
@@ -249,8 +255,13 @@
                 title: "Mount Batur Sunrise Trekking",
                 content: "Mount Batur is an active volcano located in Bali's central highlands and one of the island's most iconic experiences. The sunrise trek begins early in the morning, typically around 2–3 AM, to reach the summit in time for sunrise.<br><br>The hike takes approximately 1.5–2 hours each way and follows established trails used by local guides. At the top, you'll see the sun rise over Lake Batur, with views of surrounding mountains and volcanic terrain.<br><br>After the descent, tours often include breakfast, hot springs, or visits to nearby villages and coffee plantations. This experience is physically demanding but achievable for most people with average fitness.<br><br>Safety and pacing are prioritized, and the trek is guided by experienced locals familiar with the mountain's conditions."
             },
+            surf: {
+                image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200",
+                title: "Surf School Lessons",
+                content: "Learn to surf with patient, local instructors who know the safest beach breaks for your level. Lessons include board rental and basic technique coaching, with a focus on safety, positioning, and wave selection.<br><br>We recommend surf school for beginners and intermediate travelers who want structured guidance in the water. Sessions can be arranged in Canggu, Kuta, or other suitable beaches depending on conditions.<br><br>Morning sessions often offer cleaner waves and lighter winds. We’ll advise the best time based on the daily forecast and tide."
+            },
             scooter: {
-                image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200",
+                image: "https://images.unsplash.com/photo-1676028799586-342ec5f5ce80?q=80&w=1113&auto=format",
                 title: "Scooter / Motorbike Rental",
                 content: "Scooter rental offers freedom and flexibility, especially in areas where traffic makes cars impractical. Scooters are suitable for short distances, beach areas, and town exploration. Rentals include helmets and basic guidance. Riders are expected to have prior experience, as Bali traffic can be unpredictable. Fuel is typically not included. Scooters can be delivered to your accommodation and collected at the end of the rental period."
             },
@@ -299,7 +310,7 @@
                 <div class="text-gray-600 leading-relaxed space-y-4">
                     ${data.content}
                 </div>
-                <a href="https://wa.me/6281236803300" class="mt-12 block w-full text-center py-5 bg-[#1a4332] text-white rounded-2xl text-[12px] font-bold tracking-widest hover:bg-[#c5a059] transition uppercase shadow-xl shadow-green-900/10">Book This Service</a>
+                <a href="index.html#contact" class="mt-12 block w-full text-center py-5 bg-[#1a4332] text-white rounded-2xl text-[12px] font-bold tracking-widest hover:bg-[#c5a059] transition uppercase shadow-xl shadow-green-900/10">Book This Service</a>
             `;
             
             modal.style.display = 'flex';
@@ -358,6 +369,7 @@
             {key: 'tailor', emoji: '🗺️', name: 'Tailor-Made Tours', desc: 'Personalized itineraries built around your pace and travel style.', price: 'Custom', tags: ['Bespoke', 'Private']},
             {key: 'full', emoji: '☀️', name: 'Full Day Tours', desc: '10-hour island exploration focused on logical routes to beat traffic.', price: 'From 600k', tags: ['Deep Dive', '10 Hours']},
             {key: 'half', emoji: '🌙', name: 'Half Day Tours', desc: 'Designed for limited time or lighter schedules, focusing on one main area.', price: 'Inquire', tags: ['Flexible', '4-6 Hours']},
+            {key: 'surf', emoji: '🏄', name: 'Surf School Lessons', desc: 'Beginner to intermediate lessons with local instructors and safe beach breaks.', price: 'From 450k', tags: ['Board Included', 'Instructor']},
             {key: 'nature', emoji: '💦', name: 'Nature & Waterfalls', desc: 'Focus on quieter environments, lush forests, and river valleys.', price: 'Custom', tags: ['Scenic', 'Nature']},
             {key: 'trek', emoji: '🌋', name: 'Mount Batur Trek', desc: 'Iconic sunrise experience. A rewarding 2-hour hike to the summit.', price: 'Fixed', tags: ['Sunrise', 'Active']}
         ]);

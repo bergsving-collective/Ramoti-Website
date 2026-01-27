@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramoti Bali | Guided Tours, Rentals & Essentials by Yogi & Ucok</title>
-    <meta name="description" content="Ramoti Bali is a family-run fixer service for tours, rentals, villas, transfers, and essentials. One WhatsApp handles your entire Bali trip.">
-    <meta property="og:title" content="Ramoti Bali | Guided Tours, Rentals & Essentials">
-    <meta property="og:description" content="Custom tours, rentals, villas, transfers, and island essentials handled by Yogi & Ucok. One message, full Bali support.">
+    <title>Ramoti - Concierge and Tours | Private Driver, Tours & Fixer in Bali</title>
+    <meta name="description" content="Ramoti - Concierge and Tours is a Denpasar-based Bali fixer service for private drivers, tours, rentals, villas, transfers, and trip essentials. One WhatsApp handles your whole island stay.">
+    <meta property="og:title" content="Ramoti - Concierge and Tours | Private Driver, Tours & Fixer in Bali">
+    <meta property="og:description" content="Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali. One message, full island support.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://ramoti.com/">
+    <meta property="og:image" content="https://ramoti.com/photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png">
+    <meta property="og:site_name" content="Ramoti - Concierge and Tours">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ramoti - Concierge and Tours | Private Driver, Tours & Fixer in Bali">
+    <meta name="twitter:description" content="Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali. One message, full island support.">
+    <meta name="twitter:image" content="https://ramoti.com/photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png">
+    <link rel="canonical" href="https://ramoti.com/">
     <link rel="stylesheet" href="assets/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +24,27 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Ramoti - Concierge and Tours",
+            "description": "Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali.",
+            "telephone": "+6281236803300",
+            "areaServed": [
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Bali"
+                }
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Denpasar",
+                "addressRegion": "Bali",
+                "addressCountry": "ID"
+            }
+        }
+    </script>
     <style>
         /* Smooth scrolling for in-page anchor links */
         html { scroll-behavior: smooth; }
@@ -56,10 +83,16 @@
             animation: fadeInUp 1.5s ease-out;
         }
         .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=2000');
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('photos/couple_watching_sunrise_volcano_view_hiking_mountain_trekking.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        @media (max-width: 768px) {
+            .hero-gradient {
+                background-attachment: scroll;
+            }
         }
         .glass-card {
             background: rgba(255, 255, 255, 0.9);
@@ -105,7 +138,7 @@
             <h1 class="text-5xl md:text-7xl font-bold mb-6">Relax. We'll Fix Everything.</h1>
             <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto">From custom tours and villa rentals to your airport transport and local SIM-cards. The ultimate island service by Yogi & Ucok.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#services" class="bg-[#c5a059] text-white px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform shadow-lg">Our Services</a>
+                <a href="services.html" class="bg-[#c5a059] text-white px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform shadow-lg">Our Services</a>
                 <a href="#contact" class="bg-white text-[#1a4332] px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition shadow-lg">Chat with Yogi</a>
             </div>
         </div>
@@ -251,7 +284,7 @@
                             <a href="#contact" class="inline-block bg-[#1a4332] text-white px-6 py-3 rounded-xl font-semibold">Just Ask Us</a>
                         </div>
                         <div class="hidden md:block">
-                        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&q=80&w=300" class="rounded-2xl w-48 h-48 object-cover" alt="Bali vibe" loading="lazy">
+                        <img src="photos/two_women_sitting_in_large_circular_tree_nest_happy_outdoor.png" class="rounded-2xl w-48 h-48 object-cover" alt="Bali swing moment" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -271,7 +304,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 relative">
                     <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#f9f7f2] rounded-full z-0"></div>
-                    <img src="https://images.unsplash.com/photo-1720238281650-9adab07ea511?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yogi and Ucok" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" loading="lazy">
+                    <img src="/photos/yogilouis.png" alt="Yogi and Ucok" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" loading="lazy">
                     <div class="absolute -bottom-6 -right-6 bg-[#c5a059] p-8 rounded-2xl z-20 text-white shadow-xl">
                         <p class="text-3xl font-serif italic">"We treat you like family."</p>
                     </div>
@@ -311,28 +344,28 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1656247203824-3d6f99461ba4?q=80&w=764&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Rice Terrace" loading="lazy">
+                    <img src="photos/couple_watching_sunrise_volcano_view_hiking_mountain_trekking.png" class="gallery-img w-full h-full object-cover" alt="Friends on a rocky cliff" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Temple" loading="lazy">
+                    <img src="photos/group_hikers_descending_mountain_rocky_path_foggy_forest.png" class="gallery-img w-full h-full object-cover" alt="Traveler at a temple shrine" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4] md:mt-8">
-                    <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Beach sunset" loading="lazy">
+                    <img src="photos/group_of_people_white_water_rafting_in_river_adventure.png" class="gallery-img w-full h-full object-cover" alt="Woman at ocean cliff" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1692462464986-18373b2d8b3e?w=500&auto=format&fit=crop&q=60" class="gallery-img w-full h-full object-cover" alt="Happy Travelers" loading="lazy">
+                    <img src="photos/elephant_spraying_water_two_people_riding_in_river.png" class="gallery-img w-full h-full object-cover" alt="Guests on rocky cliff" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:-mt-8">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1170&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Villa Life" loading="lazy">
+                    <img src="photos/two_men_posing_ocean_cliff_natural_rock_arch_formation.png" class="gallery-img w-full h-full object-cover" alt="Guests at natural rock arch" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&q=80&w=600" class="gallery-img w-full h-full object-cover" alt="Dolphins Lovina" loading="lazy">
+                    <img src="photos/two_people_riding_atv_under_waterfall_yellow_helmets_adventure.png" class="gallery-img w-full h-full object-cover" alt="ATV riders under a waterfall" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:mt-4">
-                    <img src="https://images.unsplash.com/photo-1690039059538-7c08716f6623?q=80&w=765&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Waterfall Hike" loading="lazy">
+                    <img src="photos/two_women_riding_swing_laughter_tropical_forest_background.png" class="gallery-img w-full h-full object-cover" alt="Women on a jungle swing" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1578774963517-ff9d1d23d5fb?q=80&w=687&auto=format&fit=crop" class="gallery-img w-full h-full object-cover" alt="Scooter Rental" loading="lazy">
+                    <img src="photos/people_riding_red_atv_vehicles_helmeted_outdoor_pathway_greenery.png" class="gallery-img w-full h-full object-cover" alt="ATV adventure ride" loading="lazy">
                 </div>
             </div>
             
