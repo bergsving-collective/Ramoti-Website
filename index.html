@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramoti - Concierge and Tours</title>
-    <meta name="description" content="Ramoti - Concierge and Tours is a Denpasar-based Bali fixer service for private drivers, tours, rentals, villas, transfers, and trip essentials. One WhatsApp handles your whole island stay.">
+    <meta name="description"
+        content="Ramoti - Concierge and Tours is a Denpasar-based Bali fixer service for private drivers, tours, rentals, villas, transfers, and trip essentials. One WhatsApp handles your whole island stay.">
     <meta property="og:title" content="Ramoti - Concierge and Tours | Private Driver, Tours & Fixer in Bali">
-    <meta property="og:description" content="Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali. One message, full island support.">
+    <meta property="og:description"
+        content="Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali. One message, full island support.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ramoti.com/">
-    <meta property="og:image" content="https://ramoti.com/photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png">
+    <meta property="og:image"
+        content="https://ramoti.com/photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png">
     <meta property="og:site_name" content="Ramoti - Concierge and Tours">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ramoti - Concierge and Tours | Private Driver, Tours & Fixer in Bali">
-    <meta name="twitter:description" content="Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali. One message, full island support.">
-    <meta name="twitter:image" content="https://ramoti.com/photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png">
+    <meta name="twitter:description"
+        content="Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali. One message, full island support.">
+    <meta name="twitter:image"
+        content="https://ramoti.com/photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png">
     <link rel="canonical" href="https://ramoti.com/">
     <link rel="stylesheet" href="assets/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -48,62 +56,80 @@
     </script>
     <style>
         /* Smooth scrolling for in-page anchor links */
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
+
         :root {
             --bali-green: #1a4332;
             --bali-gold: #c5a059;
             --bali-sand: #f9f7f2;
         }
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--bali-sand);
             color: #333;
         }
-        h1, h2, h3, .font-serif {
+
+        h1,
+        h2,
+        h3,
+        .font-serif {
             font-family: 'Playfair Display', serif;
         }
+
         @keyframes slowZoom {
             from {
                 background-size: 100%;
             }
+
             to {
                 background-size: 110%;
             }
         }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         .hero-content {
             animation: fadeInUp 1.5s ease-out;
         }
+
         .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('photos/elephant_with_rider_and_tourist_in_safari_hat.png');
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('photos/elephant_with_rider_and_tourist_in_safari_hat.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+
         @media (max-width: 768px) {
             .hero-gradient {
                 background-attachment: scroll;
             }
         }
+
         .glass-card {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+
         .service-card:hover {
             transform: translateY(-5px);
             transition: all 0.3s ease;
         }
+
         /* Make Facebook embeds responsive */
         .fb-post,
         .fb-post span,
@@ -111,15 +137,18 @@
             width: 100% !important;
             max-width: 100% !important;
         }
+
         .fb-post iframe {
             display: block;
         }
+
         @media (max-width: 640px) {
             .fb-post {
                 transform: scale(1.08);
                 transform-origin: top left;
             }
         }
+
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -128,7 +157,7 @@
             color: white;
             padding: 15px 25px;
             border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             z-index: 1000;
             display: flex;
             align-items: center;
@@ -136,6 +165,7 @@
             font-weight: 600;
             text-decoration: none;
         }
+
         a:focus-visible,
         button:focus-visible,
         input:focus-visible,
@@ -145,9 +175,11 @@
         }
     </style>
 </head>
+
 <body class="antialiased">
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
 
     <div id="site-nav"></div>
 
@@ -155,14 +187,20 @@
     <header class="relative h-screen flex items-center justify-center hero-gradient text-white text-center pt-20">
         <div class="max-w-4xl px-4 hero-content">
             <h1 class="text-5xl md:text-7xl font-bold mb-6">Relax. We'll Fix Everything.</h1>
-            <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto">From custom tours and villa rentals to your airport transport and local SIM-cards. The ultimate island service by Yogi & Ucok.</p>
+            <p class="text-xl md:text-2xl mb-10 font-light max-w-2xl mx-auto">From custom tours and villa rentals to
+                your airport transport and local SIM-cards. The ultimate island service by Yogi & Ucok.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="services.html" class="bg-[#c5a059] text-white px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform shadow-lg">Our Services</a>
-                <a href="#contact" class="bg-white text-[#1a4332] px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition shadow-lg">Chat with Yogi</a>
+                <a href="services.html"
+                    class="bg-[#c5a059] text-white px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform shadow-lg">Our
+                    Services</a>
+                <a href="#contact"
+                    class="bg-white text-[#1a4332] px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition shadow-lg">Chat
+                    with Yogi</a>
             </div>
         </div>
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
         </div>
@@ -174,17 +212,20 @@
             <div>
                 <div class="text-[#c5a059] text-4xl mb-4 font-serif italic">01.</div>
                 <h3 class="text-2xl font-semibold mb-2">Total Convenience</h3>
-                <p class="text-gray-300">Why book 5 things in 5 places? One WhatsApp message to us handles your entire itinerary.</p>
+                <p class="text-gray-300">Why book 5 things in 5 places? One WhatsApp message to us handles your entire
+                    itinerary.</p>
             </div>
             <div>
                 <div class="text-[#c5a059] text-4xl mb-4 font-serif italic">02.</div>
                 <h3 class="text-2xl font-semibold mb-2">Local Trust</h3>
-                <p class="text-gray-300">We are a local family business. Yogi and Ucok will take care of you all the way.</p>
+                <p class="text-gray-300">We are a local family business. Yogi and Ucok will take care of you all the
+                    way.</p>
             </div>
             <div>
                 <div class="text-[#c5a059] text-4xl mb-4 font-serif italic">03.</div>
                 <h3 class="text-2xl font-semibold mb-2">No Hidden Fees</h3>
-                <p class="text-gray-300">Clear pricing for bikes, cars, and villas. What we quote is what you pay. Period.</p>
+                <p class="text-gray-300">Clear pricing for bikes, cars, and villas. What we quote is what you pay.
+                    Period.</p>
             </div>
         </div>
     </section>
@@ -201,12 +242,15 @@
                 <!-- Airport Transfers + SIM Cards -->
                 <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12M8 7a2 2 0 100-4 2 2 0 000 4zm0 0a2 2 0 110 4 2 2 0 01-4 4m4-4l8-8m-4 12h8a2 2 0 002-2V7a2 2 0 00-2-2h-8" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M8 7h12M8 7a2 2 0 100-4 2 2 0 000 4zm0 0a2 2 0 110 4 2 2 0 01-4 4m4-4l8-8m-4 12h8a2 2 0 002-2V7a2 2 0 00-2-2h-8" />
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Airport Transfers + SIM Cards</h3>
-                    <p class="text-gray-600 mb-6">Arrive stress-free and get connected immediately. Private pickup plus a pre-activated SIM on arrival.</p>
+                    <p class="text-gray-600 mb-6">Arrive stress-free and get connected immediately. Private pickup plus
+                        a pre-activated SIM on arrival.</p>
                     <ul class="text-sm space-y-2 text-gray-500">
                         <li>• Private vehicle pickup</li>
                         <li>• Pre-activated SIM with data</li>
@@ -217,12 +261,15 @@
                 <!-- Guided Tours -->
                 <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Guided Tours</h3>
-                    <p class="text-gray-600 mb-6">Waterfall treks, sunrise volcanoes, or hidden temples. We build custom routes away from the crowds.</p>
+                    <p class="text-gray-600 mb-6">Waterfall treks, sunrise volcanoes, or hidden temples. We build custom
+                        routes away from the crowds.</p>
                     <ul class="text-sm space-y-2 text-gray-500">
                         <li>• Private Driver included</li>
                         <li>• Custom Itineraries</li>
@@ -233,12 +280,15 @@
                 <!-- Rentals -->
                 <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Bike & Car Rentals</h3>
-                    <p class="text-gray-600 mb-6">Reliable NMAX scooters or family SUVs. Delivered to your hotel or the airport on arrival.</p>
+                    <p class="text-gray-600 mb-6">Reliable NMAX scooters or family SUVs. Delivered to your hotel or the
+                        airport on arrival.</p>
                     <ul class="text-sm space-y-2 text-gray-500">
                         <li>• Insurance options available</li>
                         <li>• 24/7 Roadside support</li>
@@ -249,12 +299,15 @@
                 <!-- Villas -->
                 <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Villas & Stays</h3>
-                    <p class="text-gray-600 mb-6">Don't risk an AirBnb surprise. We manage and recommend villas we personally trust.</p>
+                    <p class="text-gray-600 mb-6">Don't risk an AirBnb surprise. We manage and recommend villas we
+                        personally trust.</p>
                     <ul class="text-sm space-y-2 text-gray-500">
                         <li>• Short & Long term</li>
                         <li>• Local price negotiation</li>
@@ -265,12 +318,15 @@
                 <!-- Fast Boats -->
                 <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 17l2-2h14l2 2M5 15l2-6h10l2 6M7 9l1-2h8l1 2M6 17h12" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 17l2-2h14l2 2M5 15l2-6h10l2 6M7 9l1-2h8l1 2M6 17h12" />
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Fast Boats</h3>
-                    <p class="text-gray-600 mb-6">Skip the hassle with reliable fast-boat tickets to Nusa Penida, Lembongan, or the Gilis.</p>
+                    <p class="text-gray-600 mb-6">Skip the hassle with reliable fast-boat tickets to Nusa Penida,
+                        Lembongan, or the Gilis.</p>
                     <ul class="text-sm space-y-2 text-gray-500">
                         <li>• Trusted operators</li>
                         <li>• Harbor transfer help</li>
@@ -281,12 +337,15 @@
                 <!-- Yogi's Surfing School -->
                 <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-16 h-16 bg-[#f9f7f2] rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 18c2.5-2 6-2 8.5 0s6 2 8.5 0M4 12c2.2-1.8 5.4-1.8 7.6 0s5.4 1.8 7.6 0M6 6c1.6-1.3 3.9-1.3 5.5 0s3.9 1.3 5.5 0" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c5a059]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 18c2.5-2 6-2 8.5 0s6 2 8.5 0M4 12c2.2-1.8 5.4-1.8 7.6 0s5.4 1.8 7.6 0M6 6c1.6-1.3 3.9-1.3 5.5 0s3.9 1.3 5.5 0" />
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Yogi's Surfing School</h3>
-                    <p class="text-gray-600 mb-6">Beginner-friendly lessons with local instructors at safe beach breaks around Bali.</p>
+                    <p class="text-gray-600 mb-6">Beginner-friendly lessons with local instructors at safe beach breaks
+                        around Bali.</p>
                     <ul class="text-sm space-y-2 text-gray-500">
                         <li>• Board included</li>
                         <li>• Beach coaching</li>
@@ -295,25 +354,31 @@
                 </div>
 
                 <!-- The "Fixer" -->
-                <div class="service-card bg-[#f9f7f2] p-8 rounded-3xl shadow-inner border border-dashed border-[#c5a059] md:col-span-2 lg:col-span-2">
+                <div
+                    class="service-card bg-[#f9f7f2] p-8 rounded-3xl shadow-inner border border-dashed border-[#c5a059] md:col-span-2 lg:col-span-2">
                     <div class="flex flex-col md:flex-row gap-8 items-center">
                         <div class="flex-1">
                             <h3 class="text-3xl font-bold mb-3 text-[#1a4332]">The Ramoti Fixer Service</h3>
-                            <p class="text-gray-600 mb-6">Need something else? Fast-boat tickets to Gili? A surfboard? A private chef? If it's in Bali, we fix it.</p>
-                            <a href="#contact" class="inline-block bg-[#1a4332] text-white px-6 py-3 rounded-xl font-semibold">Just Ask Us</a>
+                            <p class="text-gray-600 mb-6">Need something else? Fast-boat tickets to Gili? A surfboard? A
+                                private chef? If it's in Bali, we fix it.</p>
+                            <a href="#contact"
+                                class="inline-block bg-[#1a4332] text-white px-6 py-3 rounded-xl font-semibold">Just Ask
+                                Us</a>
                         </div>
                         <div class="hidden md:block">
-                        <img src="photos/thefixer.jpeg" class="rounded-2xl w-48 h-48 object-cover" alt="Bali swing moment" loading="lazy">
+                            <img src="photos/thefixer.jpeg" class="rounded-2xl w-48 h-48 object-cover"
+                                alt="Bali swing moment" loading="lazy">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="mt-12 text-center">
-                <a href="services.html" class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1a4332] transition">
-                    See All Services →
-                </a>
+                <div class="mt-12 text-center">
+                    <a href="services.html"
+                        class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1a4332] transition">
+                        See All Services →
+                    </a>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -323,7 +388,9 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 relative">
                     <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#f9f7f2] rounded-full z-0"></div>
-                    <img src="photos/yogilouis.png" alt="Yogi and Ucok" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" loading="lazy">
+                    <img src="photos/yogilouis.png" alt="Yogi and Ucok"
+                        class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+                        loading="lazy">
                     <div class="absolute -bottom-6 -right-6 bg-[#c5a059] p-8 rounded-2xl z-20 text-white shadow-xl">
                         <p class="text-3xl font-serif italic">"We treat you like family."</p>
                     </div>
@@ -332,10 +399,13 @@
                     <span class="text-[#c5a059] font-bold tracking-widest uppercase text-sm">Our Story</span>
                     <h2 class="text-4xl md:text-5xl font-bold text-[#1a4332] mt-4 mb-8">Meet Yogi & Ucok</h2>
                     <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                        Yogi has been guiding travelers through Bali's emerald jungles and sapphire coasts for over 40 years. He knows every shortcut, every temple priest, and the best Babi Guling on the island.
+                        Yogi has been guiding travelers through Bali's emerald jungles and sapphire coasts for over 40
+                        years. He knows every shortcut, every temple priest, and the best Babi Guling on the island.
                     </p>
                     <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                        His son, Ucok, brings the modern touch. He handles the logistics, manages the rentals, and ensures you're connected from the moment you land. Together, they are the ultimate duo to make your Bali trip seamless.
+                        His son, Ucok, brings the modern touch. He handles the logistics, manages the rentals, and
+                        ensures you're connected from the moment you land. Together, they are the ultimate duo to make
+                        your Bali trip seamless.
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-[#f9f7f2] p-4 rounded-xl">
@@ -363,52 +433,74 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="photos/couple_watching_sunrise_volcano_view_hiking_mountain_trekking.png" class="gallery-img w-full h-full object-cover" alt="Friends on a rocky cliff" loading="lazy">
+                    <img src="photos/couple_watching_sunrise_volcano_view_hiking_mountain_trekking.png"
+                        class="gallery-img w-full h-full object-cover" alt="Friends on a rocky cliff" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
-                    <img src="photos/group_hikers_descending_mountain_rocky_path_foggy_forest.png" class="gallery-img w-full h-full object-cover" alt="Traveler at a temple shrine" loading="lazy">
+                    <img src="photos/group_hikers_descending_mountain_rocky_path_foggy_forest.png"
+                        class="gallery-img w-full h-full object-cover" alt="Traveler at a temple shrine" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4] md:mt-8">
-                    <img src="photos/group_of_people_white_water_rafting_in_river_adventure.png" class="gallery-img w-full h-full object-cover" alt="Woman at ocean cliff" loading="lazy">
+                    <img src="photos/group_of_people_white_water_rafting_in_river_adventure.png"
+                        class="gallery-img w-full h-full object-cover" alt="Woman at ocean cliff" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
-                    <img src="photos/elephant_spraying_water_two_people_riding_in_river.png" class="gallery-img w-full h-full object-cover" alt="Guests on rocky cliff" loading="lazy">
+                    <img src="photos/elephant_spraying_water_two_people_riding_in_river.png"
+                        class="gallery-img w-full h-full object-cover" alt="Guests on rocky cliff" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:-mt-8">
-                    <img src="photos/two_men_posing_ocean_cliff_natural_rock_arch_formation.png" class="gallery-img w-full h-full object-cover" alt="Guests at natural rock arch" loading="lazy">
+                    <img src="photos/two_men_posing_ocean_cliff_natural_rock_arch_formation.png"
+                        class="gallery-img w-full h-full object-cover" alt="Guests at natural rock arch" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="photos/two_people_riding_atv_under_waterfall_yellow_helmets_adventure.png" class="gallery-img w-full h-full object-cover" alt="ATV riders under a waterfall" loading="lazy">
+                    <img src="photos/two_people_riding_atv_under_waterfall_yellow_helmets_adventure.png"
+                        class="gallery-img w-full h-full object-cover" alt="ATV riders under a waterfall"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:mt-4">
-                    <img src="photos/two_women_riding_swing_laughter_tropical_forest_background.png" class="gallery-img w-full h-full object-cover" alt="Women on a jungle swing" loading="lazy">
+                    <img src="photos/two_women_riding_swing_laughter_tropical_forest_background.png"
+                        class="gallery-img w-full h-full object-cover" alt="Women on a jungle swing" loading="lazy">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
-                    <img src="photos/people_riding_red_atv_vehicles_helmeted_outdoor_pathway_greenery.png" class="gallery-img w-full h-full object-cover" alt="ATV adventure ride" loading="lazy">
+                    <img src="photos/people_riding_red_atv_vehicles_helmeted_outdoor_pathway_greenery.png"
+                        class="gallery-img w-full h-full object-cover" alt="ATV adventure ride" loading="lazy">
                 </div>
             </div>
-            
+
             <div class="mt-12 text-center">
-                <a href="gallery.html" class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1a4332] transition mb-8">
+                <a href="gallery.html"
+                    class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1a4332] transition mb-8">
                     View Full Gallery →
                 </a>
                 <p class="text-gray-500 mb-4">Follow us for more updates</p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="https://www.facebook.com/yogibalidriver" class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105" aria-label="Follow Ramoti on Facebook" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M13.5 9H15a1 1 0 001-1V6.5A1.5 1.5 0 0014.5 5H13a4 4 0 00-4 4v2H7a1 1 0 000 2h2v6a1 1 0 001 1h2a1 1 0 001-1v-6h2.2a1 1 0 00.98-.8l.4-2a1 1 0 00-.98-1.2H13V9a1 1 0 011-1z"/>
+                    <a href="https://www.facebook.com/yogibalidriver"
+                        class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105"
+                        aria-label="Follow Ramoti on Facebook" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M13.5 9H15a1 1 0 001-1V6.5A1.5 1.5 0 0014.5 5H13a4 4 0 00-4 4v2H7a1 1 0 000 2h2v6a1 1 0 001 1h2a1 1 0 001-1v-6h2.2a1 1 0 00.98-.8l.4-2a1 1 0 00-.98-1.2H13V9a1 1 0 011-1z" />
                         </svg>
                         Facebook
                     </a>
-                    <a href="https://www.instagram.com/yogibalidriver" class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105" aria-label="Follow Ramoti on Instagram" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm10 2H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2zm-5 3a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.25-2.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/>
+                    <a href="https://www.instagram.com/yogibalidriver"
+                        class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105"
+                        aria-label="Follow Ramoti on Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm10 2H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2zm-5 3a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.25-2.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z" />
                         </svg>
                         Instagram
                     </a>
-                    <a href="https://www.tiktok.com/@yogi.bali.driver" class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105" aria-label="Follow Ramoti on TikTok" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M14.5 4a1 1 0 00-1 1v9.25a3.75 3.75 0 11-2.5-3.54 1 1 0 10-.74-1.86A5.75 5.75 0 1015.5 14V8.2a7.1 7.1 0 003.5.9 1 1 0 100-2 5.1 5.1 0 01-4.1-2.06A1 1 0 0014.5 4z"/>
+                    <a href="https://www.tiktok.com/@yogi.bali.driver"
+                        class="inline-flex items-center gap-3 rounded-full bg-[#1a4332] px-6 py-3 text-white font-semibold shadow-lg transition hover:bg-[#c5a059] hover:scale-105"
+                        aria-label="Follow Ramoti on TikTok" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M14.5 4a1 1 0 00-1 1v9.25a3.75 3.75 0 11-2.5-3.54 1 1 0 10-.74-1.86A5.75 5.75 0 1015.5 14V8.2a7.1 7.1 0 003.5.9 1 1 0 100-2 5.1 5.1 0 01-4.1-2.06A1 1 0 0014.5 4z" />
                         </svg>
                         TikTok
                     </a>
@@ -426,12 +518,19 @@
             <div class="h-1 w-20 bg-[#c5a059] mx-auto mt-4"></div>
         </div>
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="fb-post" data-href="https://www.facebook.com/eli.jordannn/posts/pfbid0cZbRSwr1A79GqJ27zgsS1py1xPA3uLYx47ETWFjFvCZZgvRgy8d4RxeTap3bLoSal" data-width="500"></div>
-            <div class="fb-post" data-href="https://www.facebook.com/ellie.stewart.33/posts/pfbid0jJnUeuJiaVjoRnHsfVKbUeTLJX8JtgXa1v7RdmFpskpEZzt2i26xHzyf2rdWFfPQl" data-width="500"></div>
-            <div class="fb-post" data-href="https://www.facebook.com/honey.sinha.125/posts/pfbid034ETKkhFLBycSxPVzVTU9X9vQJutnDL6hgBeDnHhc1RWZJpHmQreGZ6NqMdQskAJEl" data-width="500"></div>
+            <div class="fb-post"
+                data-href="https://www.facebook.com/eli.jordannn/posts/pfbid0cZbRSwr1A79GqJ27zgsS1py1xPA3uLYx47ETWFjFvCZZgvRgy8d4RxeTap3bLoSal"
+                data-width="500"></div>
+            <div class="fb-post"
+                data-href="https://www.facebook.com/ellie.stewart.33/posts/pfbid0jJnUeuJiaVjoRnHsfVKbUeTLJX8JtgXa1v7RdmFpskpEZzt2i26xHzyf2rdWFfPQl"
+                data-width="500"></div>
+            <div class="fb-post"
+                data-href="https://www.facebook.com/honey.sinha.125/posts/pfbid034ETKkhFLBycSxPVzVTU9X9vQJutnDL6hgBeDnHhc1RWZJpHmQreGZ6NqMdQskAJEl"
+                data-width="500"></div>
         </div>
         <div class="mt-10 text-center">
-            <a href="https://www.facebook.com/yogibalidriver/reviews/" class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1a4332] transition">
+            <a href="https://www.facebook.com/yogibalidriver/reviews/"
+                class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1a4332] transition">
                 See All Reviews →
             </a>
         </div>
@@ -449,63 +548,98 @@
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-semibold mb-2" for="formName">Name</label>
-                            <input type="text" id="formName" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Your name">
+                            <input type="text" id="formName" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
+                                placeholder="Your name">
                         </div>
                         <div>
                             <label class="block text-sm font-semibold mb-2" for="formContact">Email / Phone</label>
-                            <input type="text" id="formContact" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="How to reach you">
+                            <input type="text" id="formContact" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
+                                placeholder="How to reach you">
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-semibold mb-2">I am interested in...</label>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Tailor-Made Tours" class="accent-[#c5a059]"> Tailor-Made Tours
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Tailor-Made Tours"
+                                    class="accent-[#c5a059]"> Tailor-Made Tours
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Full Day Tours" class="accent-[#c5a059]"> Full Day Tours
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Full Day Tours" class="accent-[#c5a059]">
+                                Full Day Tours
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Half Day Tours" class="accent-[#c5a059]"> Half Day Tours
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Half Day Tours" class="accent-[#c5a059]">
+                                Half Day Tours
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Nature & Waterfalls" class="accent-[#c5a059]"> Nature & Waterfalls
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Nature & Waterfalls"
+                                    class="accent-[#c5a059]"> Nature & Waterfalls
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Mount Batur Trek" class="accent-[#c5a059]"> Mount Batur Trek
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Mount Batur Trek"
+                                    class="accent-[#c5a059]"> Mount Batur Trek
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Scooter Rental" class="accent-[#c5a059]"> Scooter Rental
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Scooter Rental" class="accent-[#c5a059]">
+                                Scooter Rental
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Private Car & Driver" class="accent-[#c5a059]"> Private Car & Driver
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Private Car & Driver"
+                                    class="accent-[#c5a059]"> Private Car & Driver
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Airport Transfers" class="accent-[#c5a059]"> Airport Transfers
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Airport Transfers"
+                                    class="accent-[#c5a059]"> Airport Transfers
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="SIM-Card Help" class="accent-[#c5a059]"> SIM-Card Help
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="SIM-Card Help" class="accent-[#c5a059]">
+                                SIM-Card Help
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Fast Boat Tickets" class="accent-[#c5a059]"> Fast Boat Tickets
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Fast Boat Tickets"
+                                    class="accent-[#c5a059]"> Fast Boat Tickets
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" name="interest" value="Local Assistance" class="accent-[#c5a059]"> Local Assistance
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" name="interest" value="Local Assistance"
+                                    class="accent-[#c5a059]"> Local Assistance
                             </label>
-                            <label class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
-                                <input type="checkbox" id="interestCustomPlanning" name="interest" value="Custom Planning" class="accent-[#c5a059]"> Custom Planning
+                            <label
+                                class="flex items-center gap-2 text-sm p-3 border rounded-xl cursor-pointer hover:bg-gray-50">
+                                <input type="checkbox" id="interestCustomPlanning" name="interest"
+                                    value="Custom Planning" class="accent-[#c5a059]"> Custom Planning
                             </label>
                         </div>
                         <div class="mt-4 hidden" id="customPlanningField">
-                            <label class="block text-sm font-semibold mb-2" for="formCustomPlanning">Custom Planning details</label>
-                            <input type="text" id="formCustomPlanning" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Tell us your dates, interests, and pace">
+                            <label class="block text-sm font-semibold mb-2" for="formCustomPlanning">Custom Planning
+                                details</label>
+                            <input type="text" id="formCustomPlanning"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
+                                placeholder="Tell us your dates, interests, and pace">
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-semibold mb-2" for="formMessage">Message</label>
-                        <textarea id="formMessage" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]" placeholder="Tell Yogi about your plans..."></textarea>
+                        <textarea id="formMessage" rows="4"
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
+                            placeholder="Tell Yogi about your plans..."></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-[#1a4332] text-white py-4 rounded-xl font-bold text-lg hover:bg-[#c5a059] transition shadow-lg">Send to WhatsApp</button>
+                    <button type="submit"
+                        class="w-full bg-[#1a4332] text-white py-4 rounded-xl font-bold text-lg hover:bg-[#c5a059] transition shadow-lg">Send
+                        to WhatsApp</button>
                 </form>
             </div>
         </div>
@@ -532,15 +666,15 @@
         customPlanningCheckbox.addEventListener('change', toggleCustomPlanningField);
         toggleCustomPlanningField();
 
-        document.getElementById('baliForm').addEventListener('submit', function(e) {
+        document.getElementById('baliForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            
-            const phoneNumber = "6281239113232"; 
-            
+
+            const phoneNumber = "6281239113232";
+
             const name = document.getElementById('formName').value;
             const contact = document.getElementById('formContact').value;
             const message = document.getElementById('formMessage').value;
-            
+
             const selectedInterests = [];
             document.querySelectorAll('input[name="interest"]:checked').forEach((checkbox) => {
                 selectedInterests.push(checkbox.value);
@@ -552,17 +686,18 @@
             const interestsText = selectedInterests.length > 0 ? selectedInterests.join(", ") : "General Inquiry";
 
             const fullMessage = `Halo Yogi! I am interested in Ramoti Bali services.%0A%0A` +
-                                `*Name:* ${encodeURIComponent(name)}%0A` +
-                                `*Contact:* ${encodeURIComponent(contact)}%0A` +
-                                `*Interested in:* ${encodeURIComponent(interestsText)}%0A` +
-                                `*Message:* ${encodeURIComponent(message)}%0A%0A` +
-                                `Sent from Ramoti.com`;
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Contact:* ${encodeURIComponent(contact)}%0A` +
+                `*Interested in:* ${encodeURIComponent(interestsText)}%0A` +
+                `*Message:* ${encodeURIComponent(message)}%0A%0A` +
+                `Sent from Ramoti.com`;
 
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${fullMessage}`;
-            
+
             window.open(whatsappUrl, '_blank');
         });
     </script>
 
 </body>
+
 </html>
