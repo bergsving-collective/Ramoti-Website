@@ -1,0 +1,134 @@
+@keyframes slowZoom {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 110%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/photos/elephant_with_rider_and_tourist_in_safari_hat.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .hero-gradient {
+        background-attachment: scroll;
+    }
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.testimonials-section {
+    background: #1f4a3a;
+}
+
+.testimonials-kicker {
+    color: #c9a24f;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.testimonials-title {
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonials-underline {
+    width: 52px;
+    height: 3px;
+    background: #c9a24f;
+    margin: 16px auto 0;
+    border-radius: 999px;
+}
+
+.testimonials-grid {
+    display: grid;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 28px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e8f2ec;
+    box-shadow: 0 12px 30px rgba(10, 35, 25, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(10, 35, 25, 0.35);
+    border-color: rgba(201, 162, 79, 0.5);
+}
+
+.testimonial-stars {
+    color: #d8b15a;
+    letter-spacing: 0.05em;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.testimonial-meta {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.testimonial-source {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(201, 162, 79, 0.9);
+}

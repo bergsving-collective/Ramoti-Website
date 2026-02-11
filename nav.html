@@ -3,9 +3,8 @@
         <div class="flex justify-between h-20 items-center">
             <div class="flex items-center">
                 <a href="index.html">
-                    <img src="logo.png" alt="Ramoti Bali Logo" class="h-10 w-auto"
-                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span class="hidden text-2xl font-bold tracking-tighter text-[#1a4332]">RAMOTI <span
+                    <img id="navLogoImage" src="logo.png" alt="Ramoti Bali Logo" class="h-10 w-auto" decoding="async">
+                    <span id="navLogoText" class="hidden text-2xl font-bold tracking-tighter text-[#1a4332]">RAMOTI <span
                             class="text-[#c5a059]">BALI</span></span>
                 </a>
             </div>
@@ -19,7 +18,7 @@
             </div>
 
             <div class="md:hidden flex items-center">
-                <button id="mobileMenuButton" aria-expanded="false" aria-controls="mobileMenu"
+                <button id="mobileMenuButton" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu"
                     class="text-[#1a4332] p-2 hover:bg-gray-100 rounded-lg transition">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">

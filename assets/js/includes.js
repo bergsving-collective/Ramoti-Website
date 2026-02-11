@@ -29,7 +29,20 @@ const initMobileMenu = () => {
     });
 };
 
+const initLogoFallback = (imageId, textId) => {
+    const logoImg = document.getElementById(imageId);
+    const logoText = document.getElementById(textId);
+    if (!logoImg || !logoText) return;
+
+    logoImg.addEventListener('error', () => {
+        logoImg.style.display = 'none';
+        logoText.classList.remove('hidden');
+    }, { once: true });
+};
+
 window.addEventListener('DOMContentLoaded', async () => {
     await Promise.all(includeTargets.map(loadInclude));
     initMobileMenu();
+    initLogoFallback('navLogoImage', 'navLogoText');
+    initLogoFallback('footerLogoImage', 'footerLogoText');
 });

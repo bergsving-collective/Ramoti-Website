@@ -23,6 +23,8 @@
         content="https://ramoti.com/photos/ancient_balinese_water_temple_statues_spring_fountain_pool.png">
     <link rel="canonical" href="https://ramoti.com/aboutus.html">
     <link rel="stylesheet" href="assets/tailwind.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/aboutus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,67 +35,27 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="manifest" href="site.webmanifest">
-
-    <style>
-        html {
-            scroll-behavior: smooth;
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Ramoti - Concierge and Tours",
+            "description": "Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali.",
+            "telephone": "+6281239113232",
+            "areaServed": [
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Bali"
+                }
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Denpasar",
+                "addressRegion": "Bali",
+                "addressCountry": "ID"
+            }
         }
-
-        :root {
-            --bali-green: #1a4332;
-            --bali-gold: #c5a059;
-            --bali-sand: #f9f7f2;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        h1,
-        h2,
-        h3,
-        .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-
-        .hero-story {
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=1600');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .sepia-box {
-            background-color: #fdfaf5;
-            border: 1px solid #e9e0d1;
-        }
-
-        .quote-mark {
-            font-size: 8rem;
-            line-height: 0;
-            color: var(--bali-gold);
-            opacity: 0.2;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            text-decoration: none;
-        }
-    </style>
+    </script>
 </head>
 
 <body class="antialiased">
@@ -126,7 +88,7 @@
                 <div class="w-full md:w-1/2">
                     <img src="photos/yogi.jpeg"
                         class="rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
-                        alt="Yogi in Bali">
+                        alt="Yogi in Bali" loading="lazy" decoding="async">
                 </div>
                 <div class="w-full md:w-1/2">
                     <h3 class="text-bali-gold font-bold uppercase tracking-widest text-xs mb-2">The Guide</h3>
@@ -149,7 +111,7 @@
                 <div class="w-full md:w-1/2">
                     <img src="photos/yogilouis.png"
                         class="rounded-2xl shadow-2xl -rotate-2 hover:rotate-0 transition-transform duration-500"
-                        alt="Ucok in Bali">
+                        alt="Ucok in Bali" loading="lazy" decoding="async">
                 </div>
                 <div class="w-full md:w-1/2">
                     <h3 class="text-bali-gold font-bold uppercase tracking-widest text-xs mb-2">The Strategist</h3>

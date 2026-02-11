@@ -21,6 +21,8 @@
     <meta name="twitter:image" content="https://ramoti.com/photos/elephant_with_rider_and_tourist_in_safari_hat.png">
     <link rel="canonical" href="https://ramoti.com/services.html">
     <link rel="stylesheet" href="assets/tailwind.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,223 +33,36 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="manifest" href="site.webmanifest">
-    <style>
-        /* Smooth scrolling for in-page anchor links */
-        html {
-            scroll-behavior: smooth;
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Ramoti - Concierge and Tours",
+            "description": "Denpasar-based island concierge for private drivers, tours, rentals, villas, transfers, and trip essentials across Bali.",
+            "telephone": "+6281239113232",
+            "areaServed": [
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Bali"
+                }
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Denpasar",
+                "addressRegion": "Bali",
+                "addressCountry": "ID"
+            }
         }
-
-        :root {
-            --bali-green: #1a4332;
-            --bali-gold: #c5a059;
-            --bali-sand: #f9f7f2;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--bali-sand);
-            color: #333;
-        }
-
-        h1,
-        h2,
-        h3,
-        .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .service-detail-card {
-            transition: all 0.3s ease;
-        }
-
-        .service-detail-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .catalogue-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 24px;
-        }
-
-        .catalogue-card img {
-            height: 160px;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .catalogue-desc {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .bg-bali-green {
-            background-color: var(--bali-green);
-        }
-
-        .text-bali-gold {
-            color: var(--bali-gold);
-        }
-
-        .hero-inner {
-            background: linear-gradient(rgba(26, 67, 50, 0.8), rgba(26, 67, 50, 0.8)), url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=2000');
-            background-size: cover;
-            background-position: center;
-        }
-
-        a:focus-visible,
-        button:focus-visible,
-        input:focus-visible,
-        textarea:focus-visible {
-            outline: 2px solid var(--bali-gold);
-            outline-offset: 2px;
-        }
-
-        .service-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 420px;
-            width: 300px;
-            flex-shrink: 0;
-            background: white;
-            border-radius: 24px;
-            padding: 2rem;
-            border: 1px solid #f1f1f1;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-            border-color: var(--bali-gold);
-        }
-
-        .scroll-container {
-            display: flex;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-            padding: 10px 0 30px 0;
-        }
-
-        .scroll-container::-webkit-scrollbar {
-            display: none;
-        }
-
-        .nav-btn {
-            background: white;
-            border: 1px solid #eee;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-        }
-
-        .nav-btn:hover {
-            background: var(--bali-green);
-            color: white;
-        }
-
-        .chip {
-            font-size: 0.65rem;
-            padding: 4px 10px;
-            border-radius: 99px;
-            background: #f3f4f6;
-            color: #6b7280;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .wa-sticky {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            z-index: 100;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
-        }
-
-        /* Modal Overlay Styles */
-        #detailsModal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            z-index: 1000;
-            background: rgba(26, 67, 50, 0.4);
-            backdrop-filter: blur(8px);
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
-
-        .modal-content {
-            background: white;
-            width: 100%;
-            max-width: 600px;
-            max-height: 90vh;
-            border-radius: 32px;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .modal-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 20px;
-            margin-bottom: 2rem;
-        }
-    </style>
+    </script>
 </head>
 
 <body class="antialiased">
 
     <!-- Details Modal -->
-    <div id="detailsModal" onclick="closeModal(event)">
-        <div class="modal-content no-scrollbar" onclick="event.stopPropagation()">
+    <div id="detailsModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content no-scrollbar">
             <!-- Close button moved inside content relative to image -->
-            <button onclick="closeModal()"
+            <button id="detailsModalClose" type="button" aria-label="Close service details"
                 class="absolute top-4 right-4 z-10 bg-white/80 backdrop-blur-sm p-2 rounded-full text-black shadow-lg hover:bg-white transition">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -275,165 +90,9 @@
         </div>
     </header>
 
-    <!-- Service Data Object with Images -->
-    <script>
-        const serviceDetails = {
-            tailor: {
-                image: "photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png",
-                title: "Private & Custom Tours",
-                content: "Bali is not a place that should be rushed or reduced to a checklist. Our private and custom tours are designed around your pace, interests, and travel style. Instead of fixed routes, we start with a simple question: what do you actually want to see and experience?<br><br>Custom tours can include cultural landmarks such as traditional Balinese temples, royal palaces, and village compounds, as well as natural highlights like rice terraces, waterfalls, volcanic landscapes, and coastal viewpoints. Popular areas include Ubud and its surrounding countryside, central Bali's highlands, and scenic routes through lesser-visited regions where daily life continues much as it has for generations.<br><br>You travel in a private vehicle with a local driver, allowing you to stop when something catches your interest — a roadside temple ceremony, a hidden café, or a viewpoint not listed on any itinerary. These tours are ideal for couples, families, and small groups who want flexibility without stress.<br><br>Tours can be half day, full day, or spread across multiple days. Timing, destinations, and pace are adjusted to traffic conditions and daylight, ensuring the experience feels relaxed rather than compressed."
-            },
-            full: {
-                image: "photos/tourists_visiting_rocky_coast_with_waterfall_ocean_view.png",
-                title: "Full Day Tours",
-                content: "Full day tours are ideal if you want to explore one region of Bali in depth without feeling hurried. These tours typically last up to 10 hours and focus on logical travel routes to avoid excessive time spent in traffic.<br><br>Depending on your interests, a full day tour may include visits to temple complexes, scenic rice fields, mountain viewpoints, waterfalls, and traditional villages. Central Bali routes often feature cooler highland climates and panoramic views, while southern routes emphasize coastal scenery, cliffside temples, and sunsets.<br><br>Rather than packing too many distant locations into one day, our approach prioritizes realistic distances and meaningful stops. This allows time for short walks, photography, meals, and rest breaks.<br><br>Full day tours are private and customizable. If there is a specific place you want to include, we'll advise honestly on whether it fits comfortably into the day."
-            },
-            half: {
-                image: "photos/group_of_people_tourists_wearing_orange_sashes_near_cliffside_path.png",
-                title: "Half Day Tours",
-                content: "Half day tours are designed for travelers with limited time, late arrivals, or those who want a lighter schedule. These tours typically run 4–6 hours and focus on one main area or theme.<br><br>Examples include visiting a cluster of temples in southern Bali, exploring nearby waterfalls and nature spots, or enjoying a cultural walk through local villages and markets. Half day tours are especially suitable when combined with other plans such as spa visits, beach time, or evening activities.<br><br>Because traffic conditions in Bali can change quickly, half day routes are planned conservatively to ensure you return on time without rushing."
-            },
-            nature: {
-                image: "photos/tropical_waterfall_flowing_rocks_dense_green_foliage.png",
-                title: "Nature & Waterfall Tours",
-                content: "Bali's natural beauty goes far beyond its beaches. Inland regions offer lush forests, river valleys, and waterfalls hidden among jungle landscapes. Nature and waterfall tours focus on these quieter environments.<br><br>Depending on the route, you may visit multiple waterfalls, walk along rice terraces, or explore rural areas where farming traditions remain central to daily life. Some waterfalls are easily accessible, while others require short hikes through forest paths and river crossings.<br><br>These tours are well suited for travelers who enjoy light physical activity and want to experience Bali away from busy tourist centers. Comfortable footwear is recommended, and routes are chosen based on weather and fitness level."
-            },
-            agung: {
-                image: "photos/three_hikers_mount_agung_volcano_crater_trail_signature_thumbsup.png",
-                title: "Mount Agung Sunrise Trekking (Lower Summit)",
-                content: "This trek follows the Pasar Agung route to the lower summit of Mount Agung. It is one of the shortest routes to the peak and a great choice for first-time hikers or anyone who wants a challenging but more manageable climb.<br><br>You start around 1,400 meters above sea level and finish at roughly 2,918 meters. The total distance is about 9 km round trip with approximately 1,500 meters of elevation gain. Expect about 8 hours for the full climb up and down, depending on pace and conditions.<br><br>From the lower summit you can still enjoy dramatic views of the black lava fields, sunrise over the horizon, and distant peaks including Mount Bromo and Mount Semeru in Java, plus Mount Rinjani in Lombok. The lower summit is around 200 meters below the highest peak and involves less technical rock sections.<br><br>Price: US $128 per person. Includes air-conditioned car and driver, local guide, breakfast, coffee or tea, trekking pole, headlamp, and entrance ticket."
-            },
-            surf: {
-                image: "photos/group_surfing_lesson_beach_yoga_pose_training_indoor_surfboards.png",
-                title: "Surf School Lessons",
-                content: "Learn to surf with patient, local instructors who know the safest beach breaks for your level. Lessons include board rental and basic technique coaching, with a focus on safety, positioning, and wave selection.<br><br>We recommend surf school for beginners and intermediate travelers who want structured guidance in the water. Sessions can be arranged in Canggu, Kuta, or other suitable beaches depending on conditions.<br><br>Morning sessions often offer cleaner waves and lighter winds. We’ll advise the best time based on the daily forecast and tide."
-            },
-            scooter: {
-                image: "https://images.unsplash.com/photo-1676028799586-342ec5f5ce80?q=80&w=1113&auto=format",
-                title: "Scooter / Motorbike Rental",
-                content: "Scooter rental offers freedom and flexibility, especially in areas where traffic makes cars impractical. Scooters are suitable for short distances, beach areas, and town exploration. Rentals include helmets and basic guidance. Riders are expected to have prior experience, as Bali traffic can be unpredictable. Fuel is typically not included. Scooters can be delivered to your accommodation and collected at the end of the rental period."
-            },
-            car: {
-                image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200",
-                title: "Private Car with Driver",
-                content: "Hiring a private car with a local driver is the most comfortable way to travel around Bali. It allows you to relax, enjoy the scenery, and avoid navigating unfamiliar roads.<br><br>This service is suitable for tours, long-distance travel, airport transfers, and custom itineraries. Drivers are familiar with traffic patterns and can adjust routes when conditions change. Daily rates depend on duration and distance. Fuel and parking are typically included unless otherwise stated."
-            },
-            airport: {
-                image: "https://images.unsplash.com/photo-1601058837062-12e34fc7bfd4?q=80&w=1170&auto=format&fit=crop",
-                title: "Airport Pickup & Drop-off",
-                content: "Airport transfers provide a smooth start or end to your trip. A driver meets you at Ngurah Rai International Airport and takes you directly to your accommodation, or vice versa.<br><br>This service is especially helpful after long flights or early departures, removing the stress of finding transport upon arrival."
-            },
-            sim: {
-                image: "https://images.unsplash.com/photo-1753385158278-387d4dda60c4?q=80&w=1170&auto=format&fit=crop",
-                title: "SIM Card Assistance",
-                content: "Staying connected is essential for navigation, communication, and bookings. We assist with obtaining local SIM cards or activating eSIM options, depending on your device.<br><br>This service saves time and ensures you're set up correctly with reliable coverage across the island."
-            },
-            boat: {
-                image: "https://upload.wikimedia.org/wikipedia/commons/1/17/Sanur_Beach%2C_Bali_2017-08-21_%2815%29.jpg",
-                title: "Fast Boat Tickets",
-                content: "For travelers heading to nearby islands, we assist with arranging fast boat tickets. Routes and schedules vary by season and sea conditions.<br><br>We help coordinate transport to the harbor and advise on realistic departure times."
-            },
-            help: {
-                image: "photos/three_people_smiling_on_rough_rocky_cliff_near_ocean.png",
-                title: "Local Travel Assistance",
-                content: "If you're unsure how to plan certain aspects of your trip, we offer general travel assistance — from advice on destinations to help coordinating transport and activities.<br><br>This service is designed to reduce uncertainty and help you make informed choices without pressure."
-            },
-            concierge: {
-                image: "photos/three_people_smiling_on_rough_rocky_cliff_near_ocean.png",
-                title: "Tailor-Made Travel Planning",
-                content: "Not every trip fits into a package. Our custom planning service is for travelers who want guidance without rigid schedules.<br><br>You tell us your travel dates, interests, and priorities, and we help design a realistic plan that balances sightseeing, rest, and travel time. This can include day-by-day suggestions or flexible outlines you can adjust as you go.<br><br>This approach works especially well for longer stays, families, and travelers who want depth rather than quantity."
-            }
-        };
-
-        function showDetails(key) {
-            const data = serviceDetails[key];
-            const modal = document.getElementById('detailsModal');
-            const body = document.getElementById('modalBody');
-            const imgContainer = document.getElementById('modalImageContainer');
-
-            imgContainer.innerHTML = `<img src="${data.image}" class="w-full h-[300px] object-cover mb-8" alt="${data.title}">`;
-
-            body.innerHTML = `
-                <h2 class="text-3xl font-bold text-[#1a4332] mb-6">${data.title}</h2>
-                <div class="text-gray-600 leading-relaxed space-y-4">
-                    ${data.content}
-                </div>
-                <a href="index.html#contact" class="mt-12 block w-full text-center py-5 bg-[#1a4332] text-white rounded-2xl text-[12px] font-bold tracking-widest hover:bg-[#c5a059] transition uppercase shadow-xl shadow-green-900/10">Book This Service</a>
-            `;
-
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal(e) {
-            document.getElementById('detailsModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        function renderSection(id, title, items) {
-            document.write(`
-                <section id="${id}" class="py-20 px-4 border-b border-gray-50">
-                    <div class="max-w-7xl mx-auto">
-                        <div class="flex items-center justify-between mb-8">
-                            <h2 class="text-3xl font-bold text-[#1a4332]">${title}</h2>
-                            <div class="flex space-x-2">
-                                <button onclick="document.getElementById('${id}-scroller').scrollBy({left: -300, behavior: 'smooth'})" class="nav-btn">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-                                </button>
-                                <button onclick="document.getElementById('${id}-scroller').scrollBy({left: 300, behavior: 'smooth'})" class="nav-btn">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div id="${id}-scroller" class="scroll-container gap-6">
-                            ${items.map(item => `
-                                <div class="service-card shadow-sm">
-                                    <div>
-                                        <div class="flex justify-between items-start mb-6">
-                                            <span class="text-3xl">${item.emoji}</span>
-                                            <span class="text-[9px] font-bold text-[#c5a059] bg-[#c5a059]/10 px-3 py-1.5 rounded-full uppercase tracking-widest">${item.price}</span>
-                                        </div>
-                                        <h3 class="text-xl font-bold text-[#1a4332] mb-3">${item.name}</h3>
-                                        <p class="text-sm text-gray-500 mb-6 leading-relaxed">${item.desc}</p>
-                                        <div class="flex flex-wrap gap-2">
-                                            ${item.tags.map(tag => `<span class="chip">${tag}</span>`).join('')}
-                                        </div>
-                                    </div>
-                                    <button onclick="showDetails('${item.key}')" class="mt-8 block w-full text-center py-4 border-2 border-[#1a4332] text-[#1a4332] rounded-xl text-[12px] font-bold tracking-widest hover:bg-[#1a4332] hover:text-white transition uppercase">Details</button>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                </section>
-            `);
-        }
-    </script>
-
-
-
     <!-- Content Sections -->
-    <script>
-        renderSection('tours', 'Tours & Experiences', [
-            { key: 'tailor', emoji: '🗺️', name: 'Tailor-Made Tours', desc: 'Personalized itineraries built around your pace and travel style.', price: 'Custom', tags: ['Bespoke', 'Private'] },
-            { key: 'full', emoji: '☀️', name: 'Full Day Tours', desc: '10-hour island exploration focused on logical routes to beat traffic.', price: 'From 600k', tags: ['Deep Dive', '10 Hours'] },
-            { key: 'half', emoji: '🌙', name: 'Half Day Tours', desc: 'Designed for limited time or lighter schedules, focusing on one main area.', price: 'Inquire', tags: ['Flexible', '4-6 Hours'] },
-            { key: 'agung', emoji: '⛰️', name: 'Mount Agung Lower Summit Trek', desc: 'Shorter Agung route via Pasar Agung with sunrise views and a full guided climb.', price: '$128/Pax', tags: ['Sunrise', '8 Hours'] },
-            { key: 'surf', emoji: '🏄', name: 'Surf School Lessons', desc: 'Beginner to intermediate lessons with local instructors and safe beach breaks.', price: 'From 450k', tags: ['Board Included', 'Instructor'] },
-            { key: 'nature', emoji: '💦', name: 'Nature & Waterfalls', desc: 'Focus on quieter environments, lush forests, and river valleys.', price: 'Custom', tags: ['Scenic', 'Nature'] },
-        ]);
-
-        renderSection('rentals', 'Transport & Rentals', [
-            { key: 'scooter', emoji: '🛵', name: 'Scooter Rental', desc: 'Freedom and flexibility for town exploration and beach trips.', price: '80k/Day', tags: ['NMAX/Scoopy', 'Easy'] },
-            { key: 'car', emoji: '🚐', name: 'Private Car & Driver', desc: 'Navigate safely with a local driver in a clean, air-conditioned vehicle.', price: '600k/Day', tags: ['Comfort', 'Secure'] },
-            { key: 'airport', emoji: '✈️', name: 'Airport Transfers', desc: 'Smooth start/end to your trip. Direct pickup or drop-off.', price: 'Variable', tags: ['No-stress'] }
-        ]);
-
-        renderSection('essentials', 'Travel Essentials', [
-            { key: 'sim', emoji: '📱', name: 'SIM-Card Help', desc: 'Stay connected from day one without airport registration lines.', price: 'Service', tags: ['Setup'] },
-            { key: 'boat', emoji: '🛥️', name: 'Fast Boat Tickets', desc: 'Arranging reliable transfers to Nusa Penida, Lembongan, or Gilis.', price: 'Market', tags: ['Islands'] },
-            { key: 'help', emoji: '🤝', name: 'Local Assistance', desc: 'Advice on destinations and help coordinating custom requests.', price: 'Fixer', tags: ['On-Call'] }
-        ]);
-    </script>
+    <div id="service-sections"></div>
+    <script src="assets/js/services.js"></script>
 
     <!-- Custom Planning/Concierge -->
     <section id="custom" class="py-24 px-4 bg-[#1a4332] text-white">
@@ -442,7 +101,7 @@
             <h2 class="text-4xl md:text-6xl font-bold mb-8">Custom Planning</h2>
             <p class="text-lg text-gray-300 mb-12 leading-relaxed">Not every trip fits into a package. We design
                 realistic plans that balance sightseeing, rest, and travel time.</p>
-            <button onclick="showDetails('concierge')"
+            <button type="button" data-service-key="concierge"
                 class="inline-block bg-[#c5a059] text-[#1a4332] px-12 py-5 rounded-full font-bold text-sm tracking-widest hover:scale-105 transition-transform uppercase">Learn
                 More</button>
 

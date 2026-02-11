@@ -23,6 +23,8 @@
         content="https://ramoti.com/photos/group_of_people_enjoying_ocean_view_on_rocky_cliff.png">
     <link rel="canonical" href="https://ramoti.com/">
     <link rel="stylesheet" href="assets/tailwind.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,133 +56,9 @@
             }
         }
     </script>
-    <style>
-        /* Smooth scrolling for in-page anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        :root {
-            --bali-green: #1a4332;
-            --bali-gold: #c5a059;
-            --bali-sand: #f9f7f2;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--bali-sand);
-            color: #333;
-        }
-
-        h1,
-        h2,
-        h3,
-        .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-
-        @keyframes slowZoom {
-            from {
-                background-size: 100%;
-            }
-
-            to {
-                background-size: 110%;
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero-content {
-            animation: fadeInUp 1.5s ease-out;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('photos/elephant_with_rider_and_tourist_in_safari_hat.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        @media (max-width: 768px) {
-            .hero-gradient {
-                background-attachment: scroll;
-            }
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
-        }
-
-        /* Make Facebook embeds responsive */
-        .fb-post,
-        .fb-post span,
-        .fb-post iframe {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-
-        .fb-post iframe {
-            display: block;
-        }
-
-        @media (max-width: 640px) {
-            .fb-post {
-                transform: scale(1.08);
-                transform-origin: top left;
-            }
-        }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        a:focus-visible,
-        button:focus-visible,
-        input:focus-visible,
-        textarea:focus-visible {
-            outline: 2px solid var(--bali-gold);
-            outline-offset: 2px;
-        }
-    </style>
 </head>
 
 <body class="antialiased">
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
-
     <div id="site-nav"></div>
 
     <!-- Hero Section -->
@@ -367,7 +245,7 @@
                         </div>
                         <div class="hidden md:block">
                             <img src="photos/thefixer.jpeg" class="rounded-2xl w-48 h-48 object-cover"
-                                alt="Bali swing moment" loading="lazy">
+                                alt="Bali swing moment" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -390,7 +268,7 @@
                     <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#f9f7f2] rounded-full z-0"></div>
                     <img src="photos/yogilouis.png" alt="Yogi and Ucok"
                         class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
-                        loading="lazy">
+                        loading="lazy" decoding="async">
                     <div class="absolute -bottom-6 -right-6 bg-[#c5a059] p-8 rounded-2xl z-20 text-white shadow-xl">
                         <p class="text-3xl font-serif italic">"We treat you like family."</p>
                     </div>
@@ -434,36 +312,43 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
                     <img src="photos/couple_watching_sunrise_volcano_view_hiking_mountain_trekking.png"
-                        class="gallery-img w-full h-full object-cover" alt="Friends on a rocky cliff" loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="Friends on a rocky cliff" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
                     <img src="photos/group_hikers_descending_mountain_rocky_path_foggy_forest.png"
-                        class="gallery-img w-full h-full object-cover" alt="Traveler at a temple shrine" loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="Traveler at a temple shrine" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4] md:mt-8">
                     <img src="photos/group_of_people_white_water_rafting_in_river_adventure.png"
-                        class="gallery-img w-full h-full object-cover" alt="Woman at ocean cliff" loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="Woman at ocean cliff" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4]">
                     <img src="photos/elephant_spraying_water_two_people_riding_in_river.png"
-                        class="gallery-img w-full h-full object-cover" alt="Guests on rocky cliff" loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="Guests on rocky cliff" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:-mt-8">
                     <img src="photos/two_men_posing_ocean_cliff_natural_rock_arch_formation.png"
-                        class="gallery-img w-full h-full object-cover" alt="Guests at natural rock arch" loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="Guests at natural rock arch" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
                     <img src="photos/two_people_riding_atv_under_waterfall_yellow_helmets_adventure.png"
-                        class="gallery-img w-full h-full object-cover" alt="ATV riders under a waterfall"
-                        loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="ATV riders under a waterfall" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] md:mt-4">
                     <img src="photos/two_women_riding_swing_laughter_tropical_forest_background.png"
-                        class="gallery-img w-full h-full object-cover" alt="Women on a jungle swing" loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="Women on a jungle swing" loading="lazy"
+                        decoding="async">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-2xl aspect-[3/4]">
                     <img src="photos/people_riding_red_atv_vehicles_helmeted_outdoor_pathway_greenery.png"
-                        class="gallery-img w-full h-full object-cover" alt="ATV adventure ride" loading="lazy">
+                        class="gallery-img w-full h-full object-cover" alt="ATV adventure ride" loading="lazy"
+                        decoding="async">
                 </div>
             </div>
 
@@ -511,28 +396,58 @@
 
 
     <!-- Testimonials -->
-    <section class="py-24 px-4 bg-white">
-        <div class="max-w-5xl mx-auto text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold text-[#1a4332] mb-4">Guests Say It Best</h2>
-            <p class="text-gray-500 italic font-serif">Real moments from real travelers</p>
-            <div class="h-1 w-20 bg-[#c5a059] mx-auto mt-4"></div>
-        </div>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="fb-post"
-                data-href="https://www.facebook.com/eli.jordannn/posts/pfbid0cZbRSwr1A79GqJ27zgsS1py1xPA3uLYx47ETWFjFvCZZgvRgy8d4RxeTap3bLoSal"
-                data-width="500"></div>
-            <div class="fb-post"
-                data-href="https://www.facebook.com/ellie.stewart.33/posts/pfbid0jJnUeuJiaVjoRnHsfVKbUeTLJX8JtgXa1v7RdmFpskpEZzt2i26xHzyf2rdWFfPQl"
-                data-width="500"></div>
-            <div class="fb-post"
-                data-href="https://www.facebook.com/honey.sinha.125/posts/pfbid034ETKkhFLBycSxPVzVTU9X9vQJutnDL6hgBeDnHhc1RWZJpHmQreGZ6NqMdQskAJEl"
-                data-width="500"></div>
-        </div>
-        <div class="mt-10 text-center">
-            <a href="https://www.facebook.com/yogibalidriver/reviews/"
-                class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#1a4332] transition">
-                See All Reviews →
-            </a>
+    <section class="testimonials-section py-24 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <p class="testimonials-kicker text-sm uppercase tracking-widest mb-3">Testimonials</p>
+                <h2 class="testimonials-title text-4xl md:text-5xl font-bold text-white">What Our Guests Say</h2>
+                <div class="testimonials-underline"></div>
+            </div>
+            <div class="testimonials-grid">
+                <a href="https://www.facebook.com/eli.jordannn/posts/pfbid0cZbRSwr1A79GqJ27zgsS1py1xPA3uLYx47ETWFjFvCZZgvRgy8d4RxeTap3bLoSal"
+                    class="testimonial-card" target="_blank" rel="noopener noreferrer"
+                    aria-label="Read Eli Jordannn's Facebook review">
+                    <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+                    <p class="testimonial-quote">“What an amazing time in Bali! Our tours and airport transfers were
+                        seamless. They work around your schedule and are friendly. I am 100% using Yogi again!”</p>
+                    <div class="testimonial-meta">
+                        <span class="testimonial-name">Eli Jordan</span>
+                        <span class="testimonial-source">via Facebook</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/ellie.stewart.33/posts/pfbid0jJnUeuJiaVjoRnHsfVKbUeTLJX8JtgXa1v7RdmFpskpEZzt2i26xHzyf2rdWFfPQl"
+                    class="testimonial-card" target="_blank" rel="noopener noreferrer"
+                    aria-label="Read Ellie Stewart's Facebook review">
+                    <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+                    <p class="testimonial-quote">“Yogi was our driver for most of our trip! He did airport transfers,
+                        day
+                        trips and even night trips into the early hours. He is a lovely person and made us feel very
+                        safe and at home!”</p>
+                    <div class="testimonial-meta">
+                        <span class="testimonial-name">Ellie Stewart</span>
+                        <span class="testimonial-source">via Facebook</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/honey.sinha.125/posts/pfbid034ETKkhFLBycSxPVzVTU9X9vQJutnDL6hgBeDnHhc1RWZJpHmQreGZ6NqMdQskAJEl"
+                    class="testimonial-card" target="_blank" rel="noopener noreferrer"
+                    aria-label="Read Honey Shrivastava's Facebook review">
+                    <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+                    <p class="testimonial-quote">“Yogi was helpful, informative, and patient. He customized our
+                        itinerary
+                        to suit our 5-year old daughter and even recommended the best tattoo artist in town. A true
+                        5-star experience!”</p>
+                    <div class="testimonial-meta">
+                        <span class="testimonial-name">Honey Shrivastava</span>
+                        <span class="testimonial-source">via Facebook</span>
+                    </div>
+                </a>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="https://www.facebook.com/yogibalidriver/reviews/"
+                    class="inline-block bg-[#c5a059] text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#1a4332] transition">
+                    See All Reviews →
+                </a>
+            </div>
         </div>
     </section>
 
@@ -650,53 +565,7 @@
     <div id="site-whatsapp"></div>
 
     <script src="assets/js/includes.js"></script>
-    <script>
-        const customPlanningCheckbox = document.getElementById('interestCustomPlanning');
-        const customPlanningField = document.getElementById('customPlanningField');
-        const customPlanningInput = document.getElementById('formCustomPlanning');
-
-        const toggleCustomPlanningField = () => {
-            const isChecked = customPlanningCheckbox.checked;
-            customPlanningField.classList.toggle('hidden', !isChecked);
-            if (!isChecked) {
-                customPlanningInput.value = '';
-            }
-        };
-
-        customPlanningCheckbox.addEventListener('change', toggleCustomPlanningField);
-        toggleCustomPlanningField();
-
-        document.getElementById('baliForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const phoneNumber = "6281239113232";
-
-            const name = document.getElementById('formName').value;
-            const contact = document.getElementById('formContact').value;
-            const message = document.getElementById('formMessage').value;
-
-            const selectedInterests = [];
-            document.querySelectorAll('input[name="interest"]:checked').forEach((checkbox) => {
-                selectedInterests.push(checkbox.value);
-            });
-            const customPlanningDetails = customPlanningInput.value.trim();
-            if (customPlanningCheckbox.checked && customPlanningDetails) {
-                selectedInterests.push(`Custom Planning details: ${customPlanningDetails}`);
-            }
-            const interestsText = selectedInterests.length > 0 ? selectedInterests.join(", ") : "General Inquiry";
-
-            const fullMessage = `Halo Yogi! I am interested in Ramoti Bali services.%0A%0A` +
-                `*Name:* ${encodeURIComponent(name)}%0A` +
-                `*Contact:* ${encodeURIComponent(contact)}%0A` +
-                `*Interested in:* ${encodeURIComponent(interestsText)}%0A` +
-                `*Message:* ${encodeURIComponent(message)}%0A%0A` +
-                `Sent from Ramoti.com`;
-
-            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${fullMessage}`;
-
-            window.open(whatsappUrl, '_blank');
-        });
-    </script>
+    <script src="assets/js/index.js"></script>
 
 </body>
 

@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bali-green: #1a4332;
+    --bali-gold: #c5a059;
+    --bali-sand: #f9f7f2;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bali-sand);
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--bali-gold);
+    outline-offset: 2px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    text-decoration: none;
+}
