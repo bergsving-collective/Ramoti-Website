@@ -104,11 +104,29 @@ const modalBody = document.getElementById('modalBody');
 const modalImageContainer = document.getElementById('modalImageContainer');
 const modalClose = document.getElementById('detailsModalClose');
 
+const supportsWebp = (() => {
+    try {
+        const canvas = document.createElement('canvas');
+        return canvas.toDataURL('image/webp').startsWith('data:image/webp');
+    } catch (error) {
+        return false;
+    }
+})();
+
+const getImageSrc = (src) => {
+    if (!supportsWebp) return src;
+    if (src.startsWith('photos/')) {
+        return src.replace(/\.(png|jpe?g)$/i, '.webp');
+    }
+    return src;
+};
+
 function showDetails(key) {
     const data = serviceDetails[key];
     if (!data || !modal || !modalBody || !modalImageContainer) return;
 
-    modalImageContainer.innerHTML = `<img src="${data.image}" class="w-full h-[300px] object-cover mb-8" alt="${data.title}">`;
+    const imageSrc = getImageSrc(data.image);
+    modalImageContainer.innerHTML = `<img src="${imageSrc}" class="w-full h-[300px] object-cover mb-8" alt="${data.title}">`;
 
     modalBody.innerHTML = `
         <h2 class="text-3xl font-bold text-[#1a4332] mb-6">${data.title}</h2>

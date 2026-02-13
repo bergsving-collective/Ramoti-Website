@@ -32,6 +32,15 @@ filterButtons.forEach(btn => {
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 
+const supportsWebp = (() => {
+    try {
+        const canvas = document.createElement('canvas');
+        return canvas.toDataURL('image/webp').startsWith('data:image/webp');
+    } catch (error) {
+        return false;
+    }
+})();
+
 function openLightbox(src) {
     if (!lightbox || !lightboxImg) return;
     lightboxImg.src = src;
@@ -52,7 +61,10 @@ if (gallery) {
     gallery.addEventListener('click', (event) => {
         const img = event.target.closest('.gallery-card img');
         if (!img) return;
-        openLightbox(img.dataset.full || img.src);
+        const fullWebp = img.dataset.fullWebp;
+        const fullFallback = img.dataset.full || img.src;
+        const fullSrc = supportsWebp && fullWebp ? fullWebp : fullFallback;
+        openLightbox(fullSrc);
     });
 }
 

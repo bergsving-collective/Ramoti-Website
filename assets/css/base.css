@@ -21,6 +21,18 @@ h3,
     font-family: 'Playfair Display', serif;
 }
 
+picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+picture > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
